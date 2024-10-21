@@ -1,0 +1,162 @@
+.login-container {
+    max-width: 996px;
+    margin: 50px auto 128px;
+    background-color: #f9fafb;
+    padding: 40px;
+    border-radius: 10px;
+    h2 {
+        font-family: "Exo 2";
+        text-align: center;
+        margin-bottom: 5px;
+        font-size: 30px;
+        font-weight: 700;
+        color: #232323;
+    }
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-family: "Nunito";
+    font-size: 16px;
+    font-weight: 500;
+    color: #232323;
+}
+
+.login-form {
+    max-width: 384px;
+    margin: 0 auto;
+    input {
+        margin: 0 auto;
+        width: 100%;
+        height: 46px;
+        padding: 10px;
+        border: 1px solid #71717a;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+    label {
+        margin-top: 28px;
+    }
+}
+.input-error {
+    border-color: rgba(249, 51, 38, 1) !important;
+}
+.error {
+    color: rgba(249, 51, 38, 1);
+    font-family: "Nunito";
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.password-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.forgot-password {
+    float: right;
+    color: #000000;
+    font-family: "Nunito";
+    font-size: 16px;
+    font-weight: 500;
+    margin: 19px 0;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+    color: #e12d20;
+}
+
+.login-button {
+    width: 281px;
+    height: 50px;
+    display: flow-root;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: rgba(255, 130, 39, 1);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-family: "Exo 2";
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #e12d20;
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 69px;
+}
+
+.register-button {
+    width: 281px;
+    height: 48px;
+    padding: 10px;
+    background-color: white;
+    color: rgba(255, 130, 39, 1);
+    border: 2px solid rgba(255, 130, 39, 1);
+    border-radius: 8px;
+    font-family: "Exo 2";
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    margin: 20px 0 40px 0;
+}
+
+.register-button:hover {
+    border: none;
+    background-color: #f93326;
+    color: white;
+}
+
+.password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-container input {
+    width: 384px;
+    flex: 1;
+    padding-right: 50px; /*Оставляем место для иконки*/
+}
+
+.password-toggle {
+    position: absolute;
+    top: 11px;
+    right: 26px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+@media (max-width: 350px) {
+    .forgot-password {
+        float: none;
+        padding-left: 60px;
+    }
+    .password-container {
+        margin-bottom: 19px;
+    }
+    .login-button {
+        margin-top: 19px;
+    }
+    .login-button {
+        width: 218px;
+    }
+    .login-container h2 {
+        font-size: 24px;
+    }
+    .register-button {
+        width: 218px;
+    }
+    .register-link {
+        margin-top: 30px;
+    }
+}

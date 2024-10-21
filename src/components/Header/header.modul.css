@@ -1,0 +1,344 @@
+/* Общие стили для контейнера хедера */
+.header__container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: transparent;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Стили для навигации */
+.header__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Стили для логотипа */
+.header__logo {
+    margin-left: 2%;
+}
+
+.header__logo__right {
+    width: clamp(60px, 8vw, 80px);
+    height: auto;
+}
+
+/* Стили для меню */
+.header__menu {
+    display: flex;
+    position: relative;
+    padding-left: 8%;
+    flex-grow: 1;
+}
+
+nav {
+    display: flex;
+    margin-left: 2%; /* Используем процентное значение */
+}
+
+.header__menu ul {
+    display: flex;
+    gap: clamp(10px, 2vw, 25px); /* Гибкий размер для адаптации */
+    text-align: center;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header__menu li {
+    margin-right: 2%;
+}
+
+.header__menu li a,
+.header__menu span {
+    text-decoration: none;
+    color: #71717a;
+    font-family: "Exo 2";
+    font-size: clamp(14px, 1.5vw, 18px);
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.header__menu button {
+    white-space: nowrap;
+}
+
+/* Стили для кнопки "О центре" */
+.about {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.about button {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Стили для иконки стрелки */
+.insole__down {
+    color: #71717a;
+    transition: transform 0.5s ease;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    color: #ff8227;
+}
+
+/* Стили для пользовательского блока */
+.header__up__logo {
+    margin-right: 2.5%;
+}
+.enter__user ul{
+    gap: 30%;
+    margin-left: 2%;
+    display: flex;
+    align-items: center;
+}
+
+.enter__user li button {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-right: 2%;
+}
+
+/* Модальное окно */
+.header__modal {
+    position: absolute;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 225px;
+    top: 50px;
+    border-radius: 5px;
+    z-index: 1000;
+    box-shadow: 0px 4px 10px 0px rgb(217, 217, 217);
+}
+
+.header__modal ul {
+    display: block;
+    list-style: none;
+    padding: 16px;
+    margin: 0;
+}
+
+.header__modal li {
+    padding-top: 10px;
+}
+
+.header__modal a {
+    text-decoration: none;
+    font-family: "Exo 2";
+    font-weight: 700;
+    color: rgb(35, 35, 35);
+}
+/* Стили для гамбургер-меню */
+.container__hamburger {
+    display: none;
+    position: relative;
+}
+.hamburger__line__container {
+    cursor: pointer;
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hamburger__line {
+    width: 100%;
+    height: 3px;
+    background-color: rgba(255, 212, 60, 1);
+    transition: all 0.3s ease;
+    border-radius: 3px;
+}
+
+.hamburger__line.active:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+    background-color: rgba(35, 35, 35, 1);
+}
+
+.hamburger__line.active:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger__line.active:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+    background-color: rgba(35, 35, 35, 1);
+}
+.hamburger__menu__container {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    left: 29px;
+    width: 100%;
+}
+.hamburger__header__menu {
+    position: absolute;
+    right: 0px;
+    margin: 0 auto;
+    width: 320px;
+    height: auto;
+    background-color: rgba(255, 212, 60, 1);
+    z-index: 3;
+}
+.hamburger__header__menu ul {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0 0 32px;
+}
+.hamburger__header__menu ul li {
+    padding-top: 24px;
+}
+.hamburger__header__menu ul {
+    margin-bottom: 65px;
+}
+.hamburger__header__modal ul {
+    margin-bottom: 0;
+}
+.hamburger__header__menu ul li a,
+span {
+    text-decoration: none;
+    font-family: "Exo 2";
+    font-size: 16px;
+    font-weight: 700;
+    color: rgba(35, 35, 35, 1);
+}
+.hamburger__header__modal li a:hover,
+.hamburger__header__modal li a:focus,
+.hamburger__header__menu li a:hover,
+.hamburger__header__menu li a:focus {
+    color: rgba(249, 51, 38, 1);
+}
+
+.hamburger__header__modal li a.active,
+.hamburger__header__menu li a.active {
+    color: rgba(249, 51, 38, 1);
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgba(249, 51, 38, 1);
+}
+.hamburger__header__menu button {
+    background: transparent;
+    img {
+        margin: 0 0 3px 8px;
+    }
+}
+.hamburger__header__modal ul {
+    padding: 10px 24px;
+}
+.hamburger__header__menu ul li img {
+    max-width: 46px;
+    margin-top: 14px;
+}
+
+/* Адаптивные стили */
+
+@media (max-width: 1000px) {
+    .header__logo {
+        margin-left: 2%; /* Процентное значение для улучшения адаптивности */
+    }
+
+    .header__menu {
+        padding-left: 2%; /* Процентное значение для улучшения адаптивности */
+    }
+
+    .header__menu ul {
+        gap: 1vw; /* Более гибкий размер для адаптации */
+    }
+
+    .header__menu ul li {
+        margin-right: 2%;
+    }
+
+    .header__menu li a,
+    .header__menu span {
+        font-size: 1.063rem; /* Адаптивный размер шрифта */
+    }
+
+    .enter__user button {
+        margin: 0;
+    }
+
+    .enter__user button img {
+        width: 32px;
+    }
+
+    .header__logo__right {
+        width: 80px;
+    }
+
+    .header__modal {
+        margin-left: 2%;
+    }
+
+    .partners__page {
+        margin-top: 110px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .header__container {
+        justify-content: center;
+    }
+
+    .container__hamburger {
+        display: block;
+    }
+
+    .header__navigation {
+        justify-content: center;
+        margin-top: 5px;
+        width: 80%; /* Устанавливаем 100% ширины для централизации */
+    }
+
+    .header__menu {
+        display: none;
+    }
+
+    .header__logo {
+        margin: 0;
+    }
+
+    .header__logo img {
+        width: 40px;
+    }
+
+    .enter__user {
+        flex-direction: row-reverse;
+        gap: 12px;
+    }
+
+    .enter__user button img {
+        width: 32px;
+    }
+
+    .header__logo__right {
+        width: 40px;
+        height: auto;
+    }
+
+    .hamburger__line__container {
+        width: 24px;
+        height: 20px;
+    }
+
+    .header__up__logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 0;
+        margin-left: 2%; /* Процентное значение для адаптивности */
+        width: 100%; /* Используем 100% ширины для централизации */
+    }
+}

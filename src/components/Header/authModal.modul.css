@@ -1,0 +1,88 @@
+.auth__modal {
+    position: absolute;
+    top: 100px;
+    /* left: 500px; */
+    /* right: 40px; */
+    width: 207px;
+    height: 100px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth__modal__content {
+    background: white;
+    margin-right: 60px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid rgba(113, 113, 122, 1);
+    border-radius: 8px;
+}
+.auth__modal__content::after {
+    content: "";
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    background-color: #fff;
+    bottom: 5.43rem;
+    left: 12%;
+    transform: translateX(-50%) rotate(225deg);
+    border-bottom: 1px solid rgba(113, 113, 122, 1);
+    border-right: 1px solid rgba(113, 113, 122, 1);
+}
+
+.auth__modal__content button {
+    padding: 5px 0 5px 12px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 207px;
+    color: rgba(35, 35, 35, 1);
+    font-family: "Nunito";
+    font-size: 14px;
+    font-weight: 400;
+    text-align: start;
+}
+.auth__modal__content button:nth-child(1) {
+    margin-top: 17px;
+}
+.auth__modal__content button:nth-child(2) {
+    margin-bottom: 15px;
+}
+
+.auth__modal__content button:hover {
+    background-color: rgba(255, 130, 39, 0.5);
+}
+
+@media (max-width: 1000px) {
+    .auth__modal {
+        width: 150px;
+        top: 95px;
+    }
+    .auth__modal__content button {
+        font-size: 12px;
+        width: 150px;
+    }
+    .auth__modal__content button:nth-child(1) {
+        margin-top: 12px;
+    }
+    .auth__modal__content button:nth-child(2) {
+        margin-bottom: 18px;
+    }
+    .auth__modal__content::after {
+        bottom: 5.2rem;
+        left: 10%;
+    }
+}
+@media (max-width: 768px) {
+    .auth__modal {
+        top: 35%;
+        transform: translateY(-50%);
+    }
+}
+@media (max-width: 500px) {
+    .auth__modal {
+        top: 35%
+    } 
+}

@@ -1,0 +1,28 @@
+.help__button {
+  height: auto;
+  padding: 14px 77px;
+  font-family: "Exo 2";
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 8px;
+  background-color: #ff8227;
+}
+.help__button:hover {
+  color: #f8f8f8;
+  background-color: #f93326;
+}
+.help__button:active {
+  background-color: #d9610b;
+}
+
+@media (max-width: 1000px) {
+  .help__button {
+    padding: 14px 55px;
+  }
+}
+@media (max-width: 576px) {
+  .help__button {
+    width: 100%;
+  }
+}/*# sourceMappingURL=helpButton.css.map */

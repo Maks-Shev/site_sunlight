@@ -1,0 +1,190 @@
+@import './vars.scss';
+
+.title__container {
+    width: 100%;
+    margin-top: 44px;
+    margin-bottom: 44px;
+    &__textTitle {
+        font-family: 'Exo 2';
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 36px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
+
+.desc__container {
+    width: 100%;
+    margin-bottom: 128px;
+
+    &__descUp {
+        display: flex;
+        gap: 25px;
+        margin-bottom: 30px;
+        &__textBox {
+            width: 100%;
+            &__text {
+                padding-bottom: 42px;
+                font-family: 'Nunito';
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 21.82px;
+                text-align: left;
+                white-space: pre-wrap;
+            }
+        }
+        &__imgBox {
+            max-width: 587px;
+            max-height: 340px;
+            &__img {
+                width: 587px;
+                height: 340px;
+                object-fit: cover;
+            }
+        }
+    }
+
+    &__descDown {
+        &__text {
+            font-family: 'Nunito';
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 21.82px;
+            text-align: left;
+            white-space: pre-wrap;
+            &__list {
+                font-family: 'Nunito';
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 21.82px;
+                text-align: left;
+            }
+            &_uppercase {
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+.anotherProjects__container {
+    width: 100%;
+
+    &__textTitle {
+        font-family: 'Exo 2';
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 36px;
+        text-align: center;
+        margin-bottom: 60px;
+        text-transform: uppercase;
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        justify-content: space-between;
+        margin-bottom: 128px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .title__container {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    .desc__container {
+        &__descUp {
+            display: block;
+            width: 100%;
+            &__textBox {
+                &__text {
+                    padding-bottom: 26px;
+                }
+            }
+        }
+    }
+    .desc__container__descUp__imgBox {
+        max-width: $sizeWidthPadMax;
+    }
+
+    .desc__container__descUp__imgBox__img {
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 10px;
+    }
+    .anotherProjects__container {
+        &__textTitle {
+            display: none;
+        }
+        &__items {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .anotherProjects__container {
+        &__items {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .title__container {
+        margin-top: 60px;
+        margin-bottom: 30px;
+        &__textTitle {
+            font-size: 24px;
+        }
+    }
+    .desc__container {
+        margin-bottom: 88px;
+        &__descUp {
+            &__textBox {
+                &__text {
+                    line-height: 19.1px;
+                    font-size: 14px;
+                    padding-bottom: 20px;
+                }
+            }
+        }
+        &__descDown {
+            &__text {
+                line-height: 19.1px;
+                font-size: 14px;
+                &__list {
+                    line-height: 19.1px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .anotherProjects__container {
+        &__items {
+            margin-bottom: 88px;
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .title__container {
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+    .desc__container {
+        &__descUp {
+            &__textBox {
+                &__text {
+                    padding-bottom: 22px;
+                }
+            }
+        }
+    }
+}

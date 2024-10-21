@@ -1,0 +1,213 @@
+@import '../../style/vars.scss';
+@import '../../style/mixins.scss';
+
+.specialists {
+    margin-top: 128px;
+    width: 100%;
+
+    &__title {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    &__items {
+        margin-top: 44px;
+        border: 3px solid $colorTheme2;
+        border-radius: 10px;
+        max-height: 432px;
+        padding: 41px 0;
+
+        &__directorBox {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 780px;
+            max-height: 344px;
+            margin: 0 auto;
+
+            &__img {
+                width: 344px;
+                height: auto;
+            }
+
+            &__img:hover {
+                filter: brightness(90%);
+                border-radius: 10px;
+            }
+
+            &__infoText {
+                background-color: $colorTheme;
+                border-radius: 10px;
+                max-width: 383px;
+                max-height: 102px;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 15px 20.5px 21px 29.5px;
+                gap: 8px;
+
+                &__nameSpec {
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 36px;
+                }
+
+                &__text {
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 21.6px;
+                }
+            }
+        }
+
+        &__specBox {
+            margin-top: 44px;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+
+            .sliderWrapper {
+                display: flex;
+                overflow: hidden;
+                width: 100%;
+            }
+
+            .sliderItem {
+                min-width: 100%;
+                transition: transform 0.3s ease-in-out;
+            }
+
+            .paginationDots {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .specialists {
+        // padding: 0 25px; // Сбивает контейнер
+        margin-top: 68px;
+    }
+}
+
+@media (max-width: 767px) {
+    .specialists {
+        margin-top: 96px;
+        // padding: 0 20px; // Сбивает контейнер
+
+        &__items {
+            padding: 25px;
+            &__directorBox {
+                &__infoText {
+                    max-width: 295px;
+                    max-height: 102px;
+                    &__nameSpec {
+                        font-size: 16px;
+                    }
+                    &__text {
+                        font-size: 14px;
+                    }
+                }
+            }
+            &__specBox {
+                display: block;
+                margin-top: 22px;
+                margin-bottom: 24px;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .specialists {
+        &__items {
+            padding: 0;
+            border: none;
+            margin-top: 22px;
+            &__directorBox {
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                overflow: hidden;
+                min-height: 400px;
+                width: 100%;
+                z-index: 1;
+                border: 3px solid $colorTheme2;
+                border-radius: 10px;
+
+                &__img {
+                    width: 100%;
+                    border-radius: 10px;
+                    height: 384px;
+                }
+                &__infoText {
+                    bottom: 10px;
+                    min-height: 110px;
+                    overflow: hidden;
+                    position: absolute;
+                    z-index: 3;
+                    padding: 5px;
+                    border-radius: 0 0 10px 10px;
+                    width: 249.5px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+
+                    &__nameSpec {
+                        font-size: 16px;
+                    }
+
+                    &__text {
+                        font-size: 16px;
+                        width: 150px;
+                    }
+                }
+            }
+        }
+    }
+    .swiper-slide {
+        pointer-events: 650px;
+    }
+}
+
+@media (max-width: 375px) {
+    .specialists {
+        &__items {
+            &__directorBox {
+                padding: 0px;
+                min-height: 394px;
+                width: 300px;
+                &__img {
+                    width: 300px;
+                    height: 394px;
+                    object-fit: cover;
+                }
+                &__infoText {
+                    width: 300px;
+                    bottom: 0px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .specialists {
+        &__items {
+            &__directorBox {
+                width: 256px;
+                &__img {
+                    width: 256px;
+                }
+                &__infoText {
+                    width: 256px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+.donation__button {
+  padding: 13px 29px;
+  background-color: inherit;
+  font-family: "Exo 2";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  border-radius: 8px;
+  border: 1px solid #ff8227;
+  color: #ff8227;
+}
+.donation__button:hover {
+  color: #f93326;
+  border-color: #f93326;
+}
+.donation__button:active {
+  color: #f8f8f8;
+  background-color: #ff8227;
+  border-color: #ff8227;
+}
+
+@media (max-width: 1000px) {
+  .donation__button {
+    padding: 13px 30px;
+  }
+}
+@media (max-width: 576px) {
+  .donation__button {
+    padding: 13px 18px;
+    font-size: 16px;
+  }
+  .donation__button:nth-last-child(2) {
+    padding-left: 23px;
+    padding-right: 23px;
+  }
+}/*# sourceMappingURL=donationButton.css.map */

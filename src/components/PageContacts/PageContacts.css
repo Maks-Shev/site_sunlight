@@ -1,0 +1,171 @@
+.contactsPage__container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1300px;
+  padding: 53px 50px 133px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contactsPage__title {
+  text-align: center;
+  margin-bottom: 42px;
+  font-size: 30px;
+}
+.contactsPage__top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 77.5%;
+  margin-bottom: 96px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.contactsPage__map {
+  height: 600px;
+  width: 100%;
+  margin-bottom: 128px;
+  border: 3px solid #ff8227;
+  border-radius: 8px;
+}
+
+.connection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 455px;
+  gap: 20px;
+}
+.connection__item {
+  display: flex;
+  flex-direction: row;
+}
+.connection__type {
+  margin-right: 16px;
+}
+.connection__phone, .connection__email {
+  font-family: "Nunito";
+  font-size: 16px;
+  font-weight: 500;
+  color: #ff8227;
+}
+.connection__phone:hover, .connection__email:hover {
+  color: #f93326;
+}
+.connection__phone:active, .connection__email:active {
+  color: #d9610b;
+}
+
+.schedule {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 288px;
+  padding: 0 14px;
+  align-items: center;
+}
+.schedule__time {
+  margin-bottom: 10px;
+  font-family: "Exo 2";
+  font-size: 36px;
+  font-weight: 700;
+  color: #ff8227;
+}
+
+.employee__title {
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+.employee__list {
+  display: flex;
+  flex-direction: row;
+  gap: 26px;
+  width: 100%;
+}
+
+@media (max-width: 1000px) {
+  .contactsPage__container {
+    padding: 110px 30px 148px;
+  }
+  .contactsPage__top {
+    width: 87.5%;
+    margin-bottom: 60px;
+  }
+  .contactsPage__title {
+    margin-bottom: 70px;
+  }
+  .contactsPage__map {
+    margin-bottom: 120px;
+  }
+  .connection {
+    gap: 21px;
+  }
+  .connection__type {
+    margin-right: 21px;
+  }
+  .schedule {
+    padding: 0;
+    min-width: 260px;
+  }
+  .employee__title {
+    margin-bottom: 60px;
+  }
+  .employee__list {
+    gap: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .contactsPage__container {
+    padding: 27px 32px 13px;
+  }
+  .contactsPage__title {
+    font-size: 22px;
+    margin-bottom: 33px;
+  }
+  .contactsPage__top {
+    flex-direction: column;
+    gap: 39px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .contactsPage__map {
+    height: 240px;
+    margin-bottom: 30px;
+  }
+  .connection__type {
+    margin-right: 23px;
+    align-self: center;
+  }
+  .connection__type, .connection__value, .connection__phone, .connection__email {
+    font-size: 14px;
+  }
+  .schedule__time {
+    margin-bottom: 15px;
+    font-size: 30px;
+  }
+  .employee__title {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+}
+.swiper-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  margin-left: 2px;
+  margin-right: 2px;
+  background-color: #ffd43c;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  width: 15px;
+  height: 15px;
+  align-self: center;
+  background-color: #f93326;
+}
+.swiper .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 2px;
+}/*# sourceMappingURL=PageContacts.css.map */

@@ -1,0 +1,58 @@
+@import '../../../style/vars.scss';
+@import '../../../style/mixins.scss';
+
+.link {
+    display: block;
+    position: relative;
+    width: fit-content;
+    padding-right: 32px;       
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 36px;
+    color: $colorTheme2;
+    background-image: url(/img/home/star-icon.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    z-index: 2;
+
+    &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 16px;
+        left: 0;
+        bottom: 1px;
+        right: 16px;
+        border-bottom: 1px solid $colorTheme;
+        border-right: 1px solid $colorTheme;
+    }
+
+    &:hover {
+        color: $colorTheme3;
+    }
+}
+
+@media (max-width: 767px) {
+    .link {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 22px;
+        top: 3px;
+        &::after {
+            bottom: -2px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .link {
+        float: right;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22px;
+
+        &::after {
+            bottom: -6px;
+        }
+    }
+}

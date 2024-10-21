@@ -1,0 +1,36 @@
+.arrowBox {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1160px;
+  width: 100%;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.arrowButton {
+  width: 40px;
+  height: 40px;
+  background-image: url("/img/home/vector.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+.arrowButton.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+  filter: grayscale(100%) brightness(0.5);
+}
+
+.prev {
+  transform: rotate(180deg);
+}
+
+@media (max-width: 1000px) {
+  .arrowBox {
+    padding: 0 15px;
+  }
+}/*# sourceMappingURL=ArrowButtonSwiper.module.css.map */

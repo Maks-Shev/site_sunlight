@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- Главная страница -->
+<url>
+  <loc>http://localhost:5173/</loc>
+  <lastmod>2024-10-07T08:00:36+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>1.0</priority>
+</url>
+
+<!-- О нас -->
+<url>
+  <loc>http://localhost:5173/about</loc>
+  <lastmod>2024-10-07T08:00:36+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+<!-- Партнеры -->
+<url>
+  <loc>http://localhost:5173/partners</loc>
+  <lastmod>2024-10-07T08:00:36+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+
+<!-- Контакты -->
+<url>
+  <loc>http://localhost:5173/contacts</loc>
+  <lastmod>2024-10-07T08:00:36+00:00</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.5</priority>
+</url>
+
+<!-- Специалисты -->
+<url>
+  <loc>http://localhost:5173/specialists</loc>
+  <lastmod>2024-10-07T08:00:36+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+
+<!-- Страница открытого специалиста -->
+<url>
+  <loc>http://localhost:5173/aboutSpecialist/:surname/:name/:patronymic</loc>
+  <lastmod>2024-10-07T08:00:36+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+
+<!-- Проекты -->
+<url>
+  <loc>http://localhost:5173/projects</loc>
+  <lastmod>2024-10-07T08:00:36+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+
+<!-- Страница открытого проекта -->
+
+<url>
+  <loc>http://localhost:5173/:id</loc>
+  <lastmod>2024-10-07T08:00:36+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+
+<!-- Страница Территория успеха -->
+<url>
+  <loc>http://localhost:5173/territoryOfSuccess</loc>
+  <lastmod>2024-10-07T08:00:36+00:00</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.7</priority>
+</url>
+
+<!-- Новости -->
+<url>
+  <loc>http://localhost:5173/news</loc>
+  <lastmod>2024-10-07T08:00:36+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.6</priority>
+</url>
+
+<!-- Страница отдельной новости -->
+<url>
+  <loc>http://localhost:5173/news/:id</loc>
+  <lastmod>2024-10-07T08:00:36+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.6</priority>
+</url>
+
+<!-- Волонтеры -->
+<url>
+  <loc>http://localhost:5173/volunteer</loc>
+  <lastmod>2024-10-07T08:00:36+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+
+<!-- Документы (Отчеты) -->
+<url>
+  <loc>http://localhost:5173/reports</loc>
+  <lastmod>2024-10-07T08:00:36+00:00</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.5</priority>
+</url>
+
+<!-- Страница СРВ -->
+<url>
+  <loc>http://localhost:5173/SRV</loc>
+  <lastmod>2024-10-07T08:00:36+00:00</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.5</priority>
+</url>
+
+<!-- Страница Школа -->
+<url>
+  <loc>http://localhost:5173/school</loc>
+  <lastmod>2024-10-07T08:00:36+00:00</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.5</priority>
+</url>
+
+<!-- Страница Школа -->
+<url>
+  <loc>http://localhost:5173/garden</loc>
+  <lastmod>2024-10-07T08:00:36+00:00</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.5</priority>
+</url>
+
+<!-- Страница Мастерские -->
+<url>
+  <loc>http://localhost:5173/workshops</loc>
+  <lastmod>2024-10-07T08:00:36+00:00</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.5</priority>
+</url>
+
+<!-- Страница Авторизации -->
+<url>
+  <loc>http://localhost:5173/authorization</loc>
+  <lastmod>2024-10-07T08:00:36+00:00</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.5</priority>
+</url>
+
+<!-- Страница Регистрации -->
+<url>
+  <loc>http://localhost:5173/register</loc>
+  <lastmod>2024-10-07T08:00:36+00:00</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.5</priority>
+</url>
+
+<!-- Страница Ошибка 503 -->
+<url>
+  <loc>http://localhost:5173/serviceUnavailable</loc>
+  <lastmod>2024-10-07T08:00:36+00:00</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.5</priority>
+</url>
+
+</urlset>

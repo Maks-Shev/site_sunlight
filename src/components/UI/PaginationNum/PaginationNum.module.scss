@@ -1,0 +1,52 @@
+@import '../../../style/vars.scss';
+
+.pagination__button {
+    margin: 0 10px;
+    cursor: pointer;
+    font-family: 'Exo 2';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 18px;
+    background-color: white;
+    color: $colorTheme4;
+
+    &.active {
+        color: $colorTheme2;
+    }
+
+    &.disabled {
+        cursor: not-allowed;
+        opacity: 0.5;
+    }
+
+    &:hover:not(.disabled):not(.active) {
+        color: $colorTheme3;
+    }
+}
+
+.pagination__ellipsis {
+    padding: 0px 5px;
+    font-family: 'Exo 2';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 18px;
+    text-align: center;
+    color: $colorTheme5;
+}
+
+@media (max-width: 1000px) {
+    .pagination__container {
+        width: 100%;
+        margin-bottom: 64px;
+    }
+}
+
+@media (max-width: 767px) {
+    .pagination__button {
+        margin: 0 8px;
+    }
+    .pagination__container {
+        width: 100%;
+        margin-bottom: 64px;
+    }
+}

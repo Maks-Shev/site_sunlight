@@ -1,0 +1,27 @@
+.profile-container {
+    display: flex;
+}
+
+.profile-tabs {
+    width: 20%;
+}
+
+.profile-tabs button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #f1f1f1;
+    border: none;
+    text-align: left;
+}
+
+.profile-tabs button:hover {
+    background-color: #ddd;
+}
+
+.profile-content {
+    width: 80%;
+    padding: 20px;
+    background-color: #fff;
+}

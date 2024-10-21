@@ -1,0 +1,28 @@
+@import '../../style/vars.scss';
+
+.projects {
+    width: 100%;
+    margin-top: 128px;
+    margin-bottom: 128px;
+
+    &__title {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    &__description {
+        margin-top: 32px;
+    }
+}
+
+@media (max-width: 767px) {
+    .projects {
+        margin-top: 154px;
+        margin-bottom: 96px;
+        &__description {
+            margin-top: 23px;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

@@ -1,0 +1,159 @@
+.title__container {
+  width: 100%;
+  margin-top: 44px;
+  margin-bottom: 44px;
+}
+.title__container__textTitle {
+  font-family: "Exo 2";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.desc__container {
+  width: 100%;
+  margin-bottom: 128px;
+}
+.desc__container__descUp {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+.desc__container__descUp__textBox {
+  width: 100%;
+}
+.desc__container__descUp__textBox__text {
+  padding-bottom: 42px;
+  font-family: "Nunito";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.82px;
+  text-align: left;
+  white-space: pre-wrap;
+}
+.desc__container__descUp__imgBox {
+  max-width: 587px;
+  max-height: 340px;
+}
+.desc__container__descUp__imgBox__img {
+  width: 587px;
+  height: 340px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.desc__container__descDown__text {
+  font-family: "Nunito";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.82px;
+  text-align: left;
+  white-space: pre-wrap;
+}
+.desc__container__descDown__text__list {
+  font-family: "Nunito";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.82px;
+  text-align: left;
+}
+.desc__container__descDown__text_uppercase {
+  text-transform: uppercase;
+}
+
+.anotherProjects__container {
+  width: 100%;
+}
+.anotherProjects__container__textTitle {
+  font-family: "Exo 2";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  margin-bottom: 60px;
+  text-transform: uppercase;
+}
+.anotherProjects__container__items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  justify-content: space-between;
+  margin-bottom: 128px;
+}
+
+@media (max-width: 1000px) {
+  .title__container {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .desc__container__descUp {
+    display: block;
+    width: 100%;
+  }
+  .desc__container__descUp__textBox__text {
+    padding-bottom: 26px;
+  }
+  .desc__container__descUp__imgBox {
+    max-width: 940px;
+  }
+  .desc__container__descUp__imgBox__img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    border-radius: 10px;
+  }
+  .anotherProjects__container__textTitle {
+    display: none;
+  }
+  .anotherProjects__container__items {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .anotherProjects__container__items {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .title__container {
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+  .title__container__textTitle {
+    font-size: 24px;
+  }
+  .desc__container {
+    margin-bottom: 88px;
+  }
+  .desc__container__descUp__textBox__text {
+    line-height: 19.1px;
+    font-size: 14px;
+    padding-bottom: 20px;
+  }
+  .desc__container__descDown__text {
+    line-height: 19.1px;
+    font-size: 14px;
+  }
+  .desc__container__descDown__text__list {
+    line-height: 19.1px;
+    font-size: 14px;
+  }
+  .anotherProjects__container__items {
+    margin-bottom: 88px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 320px) {
+  .title__container {
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+  .desc__container__descUp__textBox__text {
+    padding-bottom: 22px;
+  }
+}/*# sourceMappingURL=OpenProject.module.css.map */

@@ -1,0 +1,247 @@
+.helpProductItem {
+  width: 100%;
+  max-width: 511px;
+  padding: 32px;
+}
+.helpProductItem__imgBox {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  height: 260px;
+  overflow: hidden;
+}
+.helpProductItem__imgBox__img {
+  background-image: url(/img/home/helpCenter.webp);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.helpProductItem__imgBox__title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  min-height: 66px;
+  border-radius: 0 0 10px 10px;
+  padding-left: 16px;
+  font-weight: 700;
+  background-color: #ffd43c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  color: #232323;
+}
+.helpProductItem__info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-top: 24px;
+}
+.helpProductItem__info__description {
+  font-weight: 400;
+  font-size: 14px;
+}
+.helpProductItem__info__detailed {
+  font-weight: 500;
+  font-size: 16px;
+  color: #ff8227;
+  background-color: white;
+  border: none;
+  border-bottom: solid 1px #ffd43c;
+  width: 86px;
+  height: 22px;
+  margin-top: -6px;
+  transition: color 0.3s;
+}
+.helpProductItem__info__detailed:hover {
+  color: #f93326;
+}
+.helpProductItem__info__scaleBox {
+  margin-bottom: 17px;
+}
+.helpProductItem__info__scaleBox__collected {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.helpProductItem__info__scaleBox__collected p {
+  color: #ff8227;
+  font-family: "Exo 2";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 100%;
+}
+.helpProductItem__info__scaleBox__completed {
+  width: 100%;
+  background-color: #ffd43c;
+  height: 2px;
+  border-radius: 2px;
+  overflow: hidden;
+}
+.helpProductItem__info__scaleBox__completed__filled {
+  height: 100%;
+  background-color: #f93326;
+  transition: width 0.3s ease-in-out;
+}
+.helpProductItem__info__scaleBox__star {
+  position: absolute;
+  transition: left 0.3s ease-in-out;
+}
+.helpProductItem__info__scaleBox__star::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 11px;
+  background-color: #f93326;
+  left: 52%;
+  top: -2px;
+}
+.helpProductItem__info__buttonBox {
+  display: flex;
+  justify-content: center;
+}
+.helpProductItem__info__buttonBox__button {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 260px;
+  height: 50px;
+  background-color: #ff8227;
+  font-family: "Exo 2";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 100%;
+  color: #fff;
+  margin-top: 16px;
+  transition: background-color 0.3s;
+}
+.helpProductItem__info__buttonBox__button:hover {
+  background-color: #f93326;
+}
+.helpProductItem__info__footer {
+  font-weight: 700;
+  font-size: 14px;
+}
+.helpProductItem__info__footer__footerLittle {
+  font-weight: 400;
+  font-size: 14px;
+}
+.helpProductItem__info__footer__footerLittle__footerColor {
+  font-weight: 400;
+  font-size: 14px;
+  cursor: pointer;
+  color: #ff8227;
+  transition: color 0.3s;
+}
+.helpProductItem__info__footer__footerLittle__footerColor:hover {
+  color: #f93326;
+}
+
+@media (max-width: 1000px) {
+  .helpProductItem {
+    border-radius: 8px;
+    padding-top: 22px;
+    padding-bottom: 19px;
+    background-color: #f8f8f8;
+    margin: 0 auto;
+  }
+  .helpProductItem__imgBox {
+    max-width: 100%;
+  }
+  .helpProductItem__imgBox__img {
+    background-image: url(/img/home/helpCenter_320.webp);
+    width: 100%;
+    height: auto;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .helpProductItem__imgBox__title {
+    font-size: 14px;
+    height: 80px;
+    padding-left: 10px;
+  }
+  .helpProductItem__info {
+    padding-top: 16px;
+    gap: 16px;
+  }
+  .helpProductItem__info__description {
+    padding-left: 10px;
+  }
+  .helpProductItem__info__detailed {
+    width: 72px;
+    margin-left: 10px;
+    background-color: #f8f8f8;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .helpProductItem__info__scaleBox {
+    margin-bottom: 5px;
+  }
+  .helpProductItem__buttonBox__button {
+    width: 256px;
+    font-weight: 700;
+    font-size: 18px;
+  }
+}
+@media (max-width: 940px) {
+  .helpProductItem {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .helpProductItem__imgBox__img {
+    height: 90%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media (max-width: 500px) {
+  .helpProductItem {
+    max-width: 350px;
+  }
+}
+@media (max-width: 470px) {
+  .helpProductItem {
+    width: 400px;
+    max-width: 100%;
+  }
+}
+@media (max-width: 440px) {
+  .helpProductItem {
+    width: 350px;
+    max-width: 100%;
+  }
+}
+@media (max-width: 375px) {
+  .helpProductItem__imgBox__title {
+    bottom: 15px;
+  }
+}
+@media (max-width: 320px) {
+  .helpProductItem {
+    max-width: 320px;
+    border-radius: 0;
+  }
+  .helpProductItem__imgBox {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .helpProductItem__imgBox__img {
+    width: 256px;
+    height: 260px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .helpProductItem__imgBox__title {
+    bottom: 0px;
+  }
+}/*# sourceMappingURL=HelpCenterItem.module.css.map */

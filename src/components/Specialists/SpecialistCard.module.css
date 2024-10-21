@@ -1,0 +1,59 @@
+.specialists__items__specBox__infoSpec {
+  max-width: 247px;
+  max-height: 382px;
+}
+.specialists__items__specBox__infoSpec__desc {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.specialists__items__specBox__infoSpec__nameSpec {
+  margin-top: 16px;
+  font-family: "Nunito";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21.82px;
+}
+.specialists__items__specBox__infoSpec__text {
+  margin-top: 8px;
+  height: 46px;
+  font-family: "Nunito";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21.82px;
+}
+.specialists__items__specBox__infoSpec__link {
+  font-family: "Nunito";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21.82px;
+  background-color: #fff;
+  color: #ff8227;
+  border-bottom: 1px solid #ffd43c;
+}
+.specialists__items__specBox__infoSpec__link:hover {
+  color: #f93326;
+}
+.specialists__items__specBox__infoSpec__img {
+  width: 247px;
+  max-height: 260px;
+}
+.specialists__items__specBox__infoSpec__img:hover {
+  filter: brightness(90%);
+  border-radius: 10px;
+}
+
+@media (max-width: 767px) {
+  .specialists__items__specBox__infoSpec {
+    max-width: 700px;
+    max-height: 382px;
+    margin-bottom: 24px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .specialists__items__specBox__infoSpec__desc {
+    width: 250px;
+  }
+}/*# sourceMappingURL=SpecialistCard.module.css.map */

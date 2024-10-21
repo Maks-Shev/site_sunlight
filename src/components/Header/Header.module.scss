@@ -1,0 +1,293 @@
+@import '../../style/vars.scss';
+@import '../../style/mixins.scss';
+
+/* Блок header */
+.header {
+    width: 100%;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0 0;
+        background: transparent;
+    }
+
+    &__logo {
+        margin-left: 30px;
+
+        img {
+            max-width: 90px;
+            height: auto;
+        }
+    }
+
+    &__menu {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+        justify-content: flex-end;
+        gap: 30px;
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: center;
+
+        &_list {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        &_item {
+            margin-right: 30px;
+            position: relative;
+        }
+
+        &_link,
+        span {
+            text-decoration: none;
+            color: $colorTheme5;
+            font-family: "Exo 2";
+            font-size: 18px;
+            font-weight: 700;
+            white-space: nowrap;
+
+            &:hover,
+            &:focus,
+            &.active {
+                color: $colorTheme2;
+                border-bottom: 2px solid $colorTheme2;
+            }
+        }
+
+        &_button {
+            background: transparent;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+    }
+    &__icon_down {
+        margin-left: 5px;
+        transition: transform 0.5s ease;
+        color: $colorTheme5;
+    }
+
+    &__icon_down.rotate {
+        transform: rotate(180deg);
+        color: $colorTheme2;
+    }
+
+    &__modal {
+        position: absolute;
+        background-color: $colorWhite;
+        flex-direction: column;
+        width: 225px;
+        top: 50px;
+        border-radius: 5px;
+        z-index: 1000;
+        box-shadow: 0px 4px 10px rgba(217, 217, 217, 0.5);
+        display: flex;
+
+        &_list {
+            padding: 16px;
+            margin: 0;
+        }
+
+        &_item {
+            padding-bottom: 10px;
+        }
+
+        &_link {
+            text-decoration: none;
+            font-family: "Exo 2";
+            font-size: 17px;
+            font-weight: 700;
+            line-height: 20.4px;
+            color: $colorTheme4;
+
+            &:hover,
+            &:focus,
+            &.active {
+                color: $colorTheme2;
+                border-bottom: 2px solid $colorTheme2;
+            }
+        }
+    }
+
+    &__actions {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    &__user_button {
+        background: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+
+    &__logo_secondary {
+        width: 80px;
+        height: auto;
+        margin-right: 10px;
+    }
+
+    &__hamburger {
+        display: none;
+        position: relative;
+    }
+}
+
+.header--other {
+    &__nav {
+        &_link,
+        span {
+            color: $colorTheme5;
+
+            &:hover,
+            &:focus,
+            &.active {
+                color: $colorTheme2;
+                border-bottom: 2px solid $colorTheme2;
+            }
+        }
+    }
+
+    &__icon_down {
+        color: $colorTheme5;
+    }
+}
+
+/* Адаптивные стили */
+@media (max-width: 1000px) {
+    .header {
+        &__menu {
+            gap: 0;
+        }
+        &__logo {
+            margin-left: 0px;
+        }
+        &__nav {
+            &_item {
+                margin-right: 25px;
+            }
+            &_link,
+            span {
+                font-size: 17px;
+                line-height: 20.4px;
+            }
+        }
+        &__user_button {
+            margin-right: -10px;
+        }
+        &__user_button svg {
+            width: 38px;
+            height: 38px;
+        }
+        &__logo_secondary {
+            margin-right: 0;
+        }
+    }
+}
+
+@media (max-width: 920px) {
+    .header__hamburger {
+        position: relative;
+        display: block;
+        margin-right: 10px;
+    }
+    .header__nav {
+        display: none;
+    }
+    .header {
+        &__actions {
+            flex-direction: row-reverse
+        }
+        &__logo {
+            margin-left: 10px;
+        }
+    }
+    .header__menu {
+        justify-content: space-between;
+        margin-left: 12px;
+    }
+}
+
+@media (max-width: 767px) {
+    .header {
+        &__actions {
+            flex-direction: row-reverse
+        }
+        &__hamburger {
+            display: block;
+            margin-right: 5px;
+        }
+        &__nav {
+            display: none;
+        }
+        &__logo {
+            margin-left: 5px;
+    
+            img {
+                max-width: 60px;
+                height: auto;
+            }
+        }
+        &__user_button svg {
+            width: 35px;
+            height: 35px;
+        }
+        &__logo_secondary {
+            width: 60px;
+            height: auto;
+            margin-right: 0;
+        }
+    }
+    .header__menu {
+        justify-content: space-between;
+        margin-left: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    .header {
+        &__hamburger {
+            display: block;
+            margin-right: 0px;
+        }
+        &__container {
+            padding: 5px 0 0;
+        }
+        &__logo {
+            margin-left: 0px;
+            img {
+                max-width: 40px;
+                height: auto;
+            }
+        }
+        &__nav {
+            display: none;
+        }
+        .header__menu {
+            justify-content: space-between;
+            margin-left: 9px;
+        }
+        &__user_button svg {
+            width: 32px;
+            height: 32px;
+        }
+        &__logo_secondary {
+            width: 40px;
+            height: 40px;
+        }
+    }
+}

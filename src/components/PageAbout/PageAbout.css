@@ -1,0 +1,461 @@
+.aboutPage {
+  width: 100%;
+  margin-top: 40px;
+}
+.aboutPage .aboutTop__header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.aboutPage .aboutTop__headerTitle {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 120%;
+  text-transform: uppercase;
+  text-align: center;
+}
+.aboutPage .aboutTop__boxTop {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 22px;
+}
+.aboutPage .aboutTop__boxTopTextBox {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 588px;
+}
+.aboutPage .aboutTop__boxTopText {
+  font-family: Nunito;
+  font-weight: 500;
+  font-size: 16px;
+}
+.aboutPage .aboutTop__boxTopText ul {
+  padding-left: 25px;
+}
+.aboutPage .aboutTop__boxTopText ul li {
+  list-style-type: disc;
+}
+.aboutPage .aboutTop__boxTopText ol {
+  padding-left: 25px;
+}
+.aboutPage .aboutTop__boxTopText ol li {
+  list-style-type: decimal;
+}
+.aboutPage .aboutTop__boxTopTextBold {
+  font-weight: 700;
+}
+.aboutPage .aboutTop__boxTopImgBox {
+  position: relative;
+  width: 100%;
+  max-width: 587px;
+  min-width: 256px;
+  height: 340px;
+}
+.aboutPage .aboutTop__boxTopImg {
+  background-image: url(/img/about/aboutPageTop.webp);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  border-radius: 10px;
+}
+.aboutPage .aboutTop__boxBottom {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-bottom: 65px;
+  max-width: 792px;
+  margin-right: 300px;
+}
+.aboutPage .aboutTop__boxBottomDescription {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  max-width: 792px;
+}
+.aboutPage .aboutTop__boxBottomDescription-width {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 792px;
+}
+.aboutPage .aboutTop__boxBottomStatistics {
+  position: absolute;
+  top: 107%;
+  left: 67%;
+  transform: translateX(-50%);
+  width: 383px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 68px;
+  gap: 32px;
+}
+.aboutPage .aboutTop__boxBottomStatistics-twins {
+  display: none;
+}
+.aboutPage .aboutTop__boxBottomStatItem {
+  width: 186px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+}
+.aboutPage .aboutTop__boxBottomStatIcon1 {
+  width: 54px;
+  height: 54px;
+  background-size: cover;
+  background-image: url(/img/home/open_year.svg);
+}
+.aboutPage .aboutTop__boxBottomStatIcon2 {
+  width: 54px;
+  height: 54px;
+  background-size: cover;
+  background-image: url(/img/home/helping-hand.svg);
+}
+.aboutPage .aboutTop__boxBottomStatIcon3 {
+  width: 54px;
+  height: 54px;
+  background-size: cover;
+  background-image: url(/img/home/icon-house.svg);
+}
+.aboutPage .aboutTop__boxBottomStatNum {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #ff8227;
+}
+.aboutPage .aboutTop__boxBottomStatText {
+  font-family: "Nunito";
+  font-weight: 500;
+  font-size: 16px;
+}
+.aboutPage .about__boxButton .about__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 8px;
+  width: 100%;
+  height: 50px;
+  color: #fff;
+  background-color: #ff8227;
+  font-weight: 700;
+  font-size: 18px;
+}
+.aboutPage .about__boxButton .about__button:hover {
+  background-color: #f93326;
+}
+.aboutPage .aboutBottom {
+  padding-top: 128px;
+  padding-bottom: 128px;
+}
+.aboutPage .aboutBottom__box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 120px;
+}
+.aboutPage .aboutBottom__item {
+  display: flex;
+  gap: 25px;
+  flex-wrap: nowrap;
+}
+.aboutPage .aboutBottom__item-reversed {
+  flex-direction: row-reverse;
+}
+.aboutPage .aboutBottom__info {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  width: 100%;
+  max-width: 587px;
+}
+.aboutPage .aboutBottom__title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+.aboutPage .aboutBottom__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 281px;
+  height: 50px;
+  color: #fff;
+  background-color: #ff8227;
+  font-family: "Exo 2";
+  font-weight: 700;
+  font-size: 18px;
+}
+.aboutPage .aboutBottom__button:hover {
+  background-color: #f93326;
+}
+.aboutPage .aboutBottom__img {
+  border-radius: 10px;
+  width: 588px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 1000px) {
+  .aboutPage {
+    margin-top: 60px;
+  }
+  .aboutPage .aboutTop__header {
+    margin-bottom: 60px;
+  }
+  .aboutPage .aboutTop__boxTopTextBox {
+    width: 455px;
+    gap: 22px;
+  }
+  .aboutPage .aboutTop__boxTopImgBox {
+    position: relative;
+    width: 460px;
+  }
+  .aboutPage .aboutTop__boxTopImg {
+    background-image: url(/img/about/aboutPageTop_1000.webp);
+    background-position: center;
+  }
+  .aboutPage .aboutTop__boxBottom {
+    max-width: 100%;
+    margin-right: 0;
+  }
+  .aboutPage .aboutTop__boxBottomDescription {
+    max-width: 100%;
+    margin-right: 300px;
+    gap: 20px;
+  }
+  .aboutPage .aboutTop__boxBottomDescription-width {
+    max-width: 100%;
+  }
+  .aboutPage .aboutTop__boxBottomStatistics {
+    position: absolute;
+    top: 87%;
+    left: 58%;
+  }
+  .aboutPage .aboutTop__boxTopText {
+    max-width: 558px;
+  }
+  .aboutPage .aboutTop__boxTopText-width {
+    max-width: 940px;
+  }
+  .aboutPage .aboutBottom {
+    padding-top: 138px;
+    padding-bottom: 153px;
+  }
+  .aboutPage .aboutBottom__box {
+    gap: 140px;
+  }
+  .aboutPage .aboutBottom__item {
+    gap: 10px;
+  }
+  .aboutPage .aboutBottom__item-reversed .aboutBottom__info {
+    padding-left: 20px;
+  }
+  .aboutPage .aboutBottom__info {
+    max-width: 474px;
+  }
+  .aboutPage .aboutBottom__img {
+    width: 454px;
+  }
+  .aboutPage .aboutBottom__button {
+    max-width: 208px;
+  }
+  .aboutPage .aboutBottom__button-last {
+    width: 262px;
+  }
+}
+@media (max-width: 767px) {
+  .aboutPage .aboutTop__boxTopTextBox {
+    width: 100%;
+    gap: 20px;
+  }
+  .aboutPage .aboutTop__boxTopText {
+    max-width: 450px;
+  }
+  .aboutPage .aboutTop__boxTopText ol {
+    padding-left: 22px;
+  }
+  .aboutPage .aboutTop__boxTopText-width {
+    max-width: 100%;
+  }
+  .aboutPage .aboutTop__boxTopImgBox {
+    width: 100%;
+  }
+  .aboutPage .aboutTop__boxBottom {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .aboutPage .aboutTop__boxBottomDescription {
+    width: 100%;
+    gap: 20px;
+    margin-right: 0;
+  }
+  .aboutPage .aboutTop__boxBottomDescription .aboutTop__boxTopText {
+    margin-right: 300px;
+    max-width: 100%;
+  }
+  .aboutPage .aboutTop__boxBottomDescription .aboutTop__boxTopText:last-child {
+    margin-right: 0;
+    max-width: 100%;
+  }
+  .aboutPage .aboutTop__boxBottomDescription-width {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+  }
+  .aboutPage .aboutBottom__item {
+    gap: 20px;
+    width: 100%;
+  }
+  .aboutPage .aboutBottom__info {
+    height: 300px;
+  }
+  .aboutPage .aboutBottom__item-reversed .aboutBottom__info {
+    padding-left: 0px;
+  }
+  .aboutPage .aboutBottom__title {
+    font-size: 22px;
+  }
+  .aboutPage .aboutBottom__description {
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .aboutPage .aboutBottom__img {
+    width: 100%;
+    height: 300px;
+  }
+}
+@media (max-width: 767px) and (max-width: 576px) {
+  .aboutPage {
+    margin-top: 27px;
+  }
+  .aboutPage .aboutTop__header {
+    margin-bottom: 27px;
+  }
+  .aboutPage .aboutTop__headerTitle {
+    font-size: 22px;
+  }
+  .aboutPage .aboutTop__boxTop {
+    flex-direction: column-reverse;
+  }
+  .aboutPage .aboutTop__boxTopTextBox {
+    width: 100%;
+    gap: 20px;
+  }
+  .aboutPage .aboutTop__boxTopText {
+    max-width: 100%;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .aboutPage .aboutTop__boxTopText ol {
+    padding-left: 22px;
+  }
+  .aboutPage .aboutTop__boxTopText-width {
+    max-width: 100%;
+  }
+  .aboutPage .aboutTop__boxTopImgBox {
+    width: 100%;
+  }
+  .aboutPage .aboutTop__boxBottom {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .aboutPage .aboutTop__boxBottomDescription {
+    width: 100%;
+    gap: 20px;
+  }
+  .aboutPage .aboutTop__boxBottomDescription .aboutTop__boxTopText {
+    margin-right: 0;
+    max-width: 100%;
+  }
+  .aboutPage .aboutTop__boxBottomDescription-width {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+  }
+  .aboutPage .aboutTop__boxBottomStatistics {
+    display: none;
+  }
+  .aboutPage .aboutTop__boxBottomStatistics-twins {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+  .aboutPage .aboutTop__boxBottom {
+    margin-bottom: 30px;
+  }
+  .aboutPage .aboutBottom {
+    padding-top: 70px;
+    padding-bottom: 56px;
+    position: relative;
+  }
+  .aboutPage .aboutBottom__item {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    gap: 20px;
+    width: 100%;
+    height: 740px;
+  }
+  .aboutPage .aboutBottom__info {
+    max-width: 500px;
+    width: 100%;
+    height: 370px;
+  }
+  .aboutPage .aboutBottom__item-reversed .aboutBottom__info {
+    padding-left: 0px;
+  }
+  .aboutPage .aboutBottom__title {
+    font-size: 22px;
+  }
+  .aboutPage .aboutBottom__description {
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .aboutPage .aboutBottom__button {
+    max-width: 500px;
+    width: 100%;
+  }
+  .aboutPage .aboutBottom__img {
+    width: 100%;
+    height: 300px;
+  }
+  .aboutPage .pageAbout-Swiper .swiper-pagination {
+    display: flex;
+    gap: 4px;
+    bottom: 4px;
+    align-items: center;
+    justify-content: center;
+  }
+  .aboutPage .pageAbout-Swiper .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    margin: 0 !important;
+    border-radius: 50%;
+    background-color: #ffd43c;
+    opacity: 1;
+    transition: background-color 0.3s ease;
+  }
+  .aboutPage .pageAbout-Swiper .swiper-pagination-bullet-active {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #f93326;
+  }
+}/*# sourceMappingURL=PageAbout.css.map */

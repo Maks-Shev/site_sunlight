@@ -1,0 +1,126 @@
+.newsPage {
+  width: 100%;
+}
+.newsPage__container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+}
+.newsPage__title {
+  margin-bottom: 37px;
+  padding-left: 28px;
+  text-align: center;
+  font-size: 36px;
+}
+.newsPage__hero {
+  display: flex;
+  flex-direction: row;
+  gap: 27px;
+  margin-bottom: 56px;
+}
+.newsPage__description p {
+  font-size: 16px;
+  font-weight: 700;
+}
+.newsPage__description p:not(:last-child) {
+  margin-bottom: 22px;
+}
+.newsPage__img {
+  width: auto;
+}
+.newsPage__slider {
+  position: relative;
+}
+.newsPage__prev, .newsPage__next {
+  position: absolute;
+  background-color: inherit;
+  bottom: 6px;
+  z-index: 2;
+}
+.newsPage__prev:hover, .newsPage__next:hover {
+  color: #ff8227;
+}
+.newsPage__prev:active, .newsPage__next:active {
+  color: #f93326;
+}
+.newsPage__prev {
+  left: calc(50% - 147px);
+}
+.newsPage__next {
+  right: calc(50% - 104px);
+}
+.newsPage__pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 128px;
+}
+
+@media (max-width: 1000px) {
+  .newsPage__container {
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .newsPage__title {
+    padding: 0;
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .newsPage__description p:not(:last-child) {
+    margin-bottom: 22px;
+  }
+  .newsPage__hero {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .newsPage__img {
+    width: 100%;
+  }
+  .newsPage__prev {
+    left: calc(50% - 126px);
+  }
+  .newsPage__next {
+    right: calc(50% - 126px);
+  }
+  .newsPage__pagination {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 768px) {
+  .newsPage__prev {
+    left: calc(50% - 170px);
+  }
+  .newsPage__next {
+    right: calc(50% - 173px);
+  }
+}
+@media (max-width: 576px) {
+  .newsPage__pagination {
+    margin-top: 30px;
+  }
+  .newsPage__container {
+    padding: 29px 32px 0;
+  }
+  .newsPage__title {
+    margin-bottom: 35px;
+    font-size: 24px;
+  }
+  .newsPage__hero {
+    gap: 32px;
+  }
+  .newsPage__slider .card {
+    min-height: 414px;
+    height: 414px;
+    margin-bottom: 0;
+  }
+  .newsPage__slider .card .card__picture {
+    height: 205px;
+  }
+  .newsPage__slider .card .card__content {
+    padding: 17px 28px 40px 16px;
+  }
+  .newsPage__slider .card .card__content .card__description {
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=PageNews.module.css.map */

@@ -1,0 +1,28 @@
+.swiper-pagination {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  margin-top: 10px;
+  border-radius: 50%;
+  background-color: #ffd43c;
+  margin: 0 4px;
+  opacity: 1;
+  transition: background-color 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  width: 16px;
+  height: 16px;
+  margin-top: 10px;
+  border-radius: 50%;
+  background-color: #f93326;
+  margin-top: 30px;
+}/*# sourceMappingURL=CustomSwiper.module.css.map */

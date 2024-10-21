@@ -1,0 +1,76 @@
+.block__not__found {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.not__found__img {
+    max-width: 480px;
+    img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+}
+.not__found__title {
+    font-family: "Exo 2";
+    font-style: bold;
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+.btn__not__found {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    max-width: 350px;
+}
+.btn__home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Exo 2";
+    font-size: 14px;
+    font-weight: 700;
+    width: 280px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: rgb(255, 130, 39);
+    color: #fff;
+}
+.btn__home:hover {
+    background-color: rgb(249, 51, 38);
+}
+footer {
+    max-width: 1200px;
+    margin: 50px auto 40px;
+}
+
+.footer__up__left__not__found {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+@media (max-width: 480px) {
+    .not__found__title {
+        font-size: 25px;
+    }
+    .btn__home {
+        width: 180px;
+        height: 40px;
+    }
+    .footer__up__left__not__found {
+        width: 256px;
+        a img {
+            width: 55px;
+            height: auto;
+        }
+        p {
+            font-size: 15px;
+        }
+    }
+}

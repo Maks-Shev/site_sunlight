@@ -1,0 +1,126 @@
+.documents {
+  width: 100%;
+  margin-bottom: 196px;
+}
+.documents h1 {
+  font-size: 30px;
+  line-height: 120%;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+.documents__box {
+  display: flex;
+  gap: 34px;
+  margin-bottom: 44px;
+}
+.documents__boxButton {
+  display: flex;
+  justify-content: center;
+}
+.documents__button {
+  border-radius: 8px;
+  max-width: 587px;
+  width: 100%;
+  height: 54px;
+  background-color: #ff8227;
+  font-family: "Exo 2";
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+}
+.documents__button:hover {
+  background-color: #f93326;
+}
+
+.documentItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 3px solid #ff8227;
+  border-radius: 8px;
+  max-width: 182px;
+  width: 100%;
+  height: 168px;
+  padding: 24px 21px 21px 21px;
+}
+.documentItem__title h2 {
+  font-weight: 700;
+  font-size: 14px;
+}
+.documentItem__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.documentItem__button:hover .documentItem__buttonText {
+  color: #f93326;
+}
+.documentItem__button p {
+  font-weight: 700;
+  font-size: 16px;
+  color: #ff8227;
+}
+.documentItem__button img {
+  margin-left: 3px;
+}
+
+@media (max-width: 1000px) {
+  .documents {
+    margin-bottom: 128px;
+  }
+  .documents__box {
+    gap: 8px;
+  }
+}
+@media (max-width: 767px) {
+  .documents__box {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 576px) {
+  .documents {
+    margin-bottom: 128px;
+  }
+  .documents h1 {
+    font-size: 22px;
+    margin-bottom: 22px;
+  }
+  .documents__box {
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 0;
+    border: 3px solid #ff8227;
+    border-radius: 10px;
+    height: 314px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 38px;
+    padding-bottom: 24px;
+    margin-bottom: 32px;
+  }
+  .documents__button {
+    height: 48px;
+  }
+  .documentItem {
+    flex-direction: row;
+    align-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    border: none;
+    min-width: 240px;
+    max-width: 257px;
+    width: 100%;
+    height: 58px;
+  }
+  .documentItem__title {
+    width: 160px;
+  }
+  .documentItem__button p {
+    display: none;
+  }
+  .documentItem__button img {
+    width: 32px;
+  }
+}/*# sourceMappingURL=DocumentsList.css.map */

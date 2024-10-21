@@ -1,0 +1,231 @@
+@import './vars.scss';
+
+.aboutSpec__container {
+    width: 100%;
+    margin-top: 139px;
+    margin-bottom: 78px;
+    display: flex;
+
+    &__descAbout {
+        padding: 70px 87px 75px 87px;
+        background-color: #F9FAFB;
+        border-radius: 10px;
+
+        &__desc {
+            &__name {
+                font-family: 'Exo 2';
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 36px;
+                text-align: left;
+                margin-bottom: 16px;
+            }
+    
+            &__positionWork {
+                font-family: 'Nunito';
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 21.82px;
+                text-align: left;
+                margin-bottom: 40px;
+            }
+    
+            &__aboutSelf {
+                font-family: 'Nunito';
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 19.1px;
+                text-align: left;
+                margin-bottom: 20px;
+                text-align: justify;
+                white-space: pre-wrap;
+            }
+    
+            &__txt {
+                font-family: 'Nunito';
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 21.82px;
+                text-align: left;
+                margin-bottom: 25px;
+                white-space: pre-wrap;
+            }
+        }
+
+        &__imgBox {
+            margin-top: 175px;
+            display: flex;
+            justify-content: center;
+            &__img {
+                width: 323px;
+                height: 296px;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+        }
+    }
+
+    &__anotherSpec {
+        padding: 71px 56px 0 95px;
+
+        &__specBox {
+            &__title {
+                font-family: 'Exo 2';
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 28.8px;
+                margin-bottom: 43px;
+            }
+            &__items {
+                display: flex;
+                flex-direction: column;
+                gap: 64px;
+            }
+        }
+    }
+}
+
+.charity__container {
+    width: 100%;
+}
+
+.pagination__container {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .aboutSpec__container {
+        margin-top: 68px;
+        margin-bottom: 64px;
+        display: block;
+        &__descAbout {
+            padding: 77px 0 0 0;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &__desc {
+                max-width: 619px;
+            }
+            &__imgBox {
+                margin-top: 110px;
+                margin-bottom: 41px;
+                margin-right: 50px;
+            }
+        }
+        &__anotherSpec {
+            padding: 0;
+            margin-top: 64px;
+            margin-bottom: 128px;
+            &__specBox {
+                &__title {
+                    margin-bottom: 32px;
+                }
+                &__items {
+                    flex-direction: row;
+                    gap: 20px;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+    .pagination__container {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .aboutSpec__container__descAbout {
+        padding: 10px 20px;
+        &__imgBox {
+            margin-right: 0;
+        }
+    }
+    .aboutSpec__container {
+        &__anotherSpec {
+            margin-bottom: 50px;
+            &__specBox {
+                &__items {
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+        }
+    }
+    .pagination__container {
+        width: 320px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 64px;
+    }
+}
+
+@media (max-width: 375px) {
+    .pagination__container {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 64px;
+    }
+    .aboutSpec__container {
+        margin-top: 90px;
+        margin-bottom: 24px;
+        &__descAbout {
+            padding: 42px 15px 0 15px;
+            &__desc {
+                &__name {
+                    margin-bottom: 20px;
+                }
+                &__positionWork {
+                    margin-bottom: 20px;
+                }
+                &__aboutSelf {
+                    text-align: left;
+                    margin-bottom: 24px;
+                }
+                &__txt {
+                    margin-bottom: 24px;
+                }
+            }
+            &__imgBox {
+                margin-top: 0;
+                margin-right: 0;
+                margin-bottom: 0;
+                &__img {
+                    width: $sizeWidthPhoneSmall;
+                    height: 230px;
+                    object-fit: cover;
+                    border-radius: 10px;
+                }
+            }
+        }
+        &__anotherSpec {
+            margin-top: 24px;
+            margin-bottom: 24px;
+            &__specBox {
+                margin-bottom: 60px;
+                &__title {
+                    margin-bottom: 24px;
+                    font-size: 24px;
+                }
+                &__items {
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .pagination__container {
+        width: $sizeWidthPhoneSmall;
+    }
+
+    .aboutSpec__container {
+        &__descAbout {
+            padding: 42px 0px 0 0px;
+        }
+    }
+}

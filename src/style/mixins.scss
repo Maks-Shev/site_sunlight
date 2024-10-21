@@ -1,0 +1,4 @@
+@mixin centerSize($sizeWidthDefault) {
+	padding-left: calc(50% - $sizeWidthDefault / 2);
+	padding-right: calc(50% - $sizeWidthDefault / 2);
+}

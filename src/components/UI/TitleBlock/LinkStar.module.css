@@ -1,0 +1,52 @@
+.link {
+  display: block;
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-right: 32px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 36px;
+  color: #ff8227;
+  background-image: url(/img/home/star-icon.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  z-index: 2;
+}
+.link::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 16px;
+  left: 0;
+  bottom: 1px;
+  right: 16px;
+  border-bottom: 1px solid #ffd43c;
+  border-right: 1px solid #ffd43c;
+}
+.link:hover {
+  color: #f93326;
+}
+
+@media (max-width: 767px) {
+  .link {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    top: 3px;
+  }
+  .link::after {
+    bottom: -2px;
+  }
+}
+@media (max-width: 576px) {
+  .link {
+    float: right;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+  }
+  .link::after {
+    bottom: -6px;
+  }
+}/*# sourceMappingURL=LinkStar.module.css.map */

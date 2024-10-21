@@ -1,0 +1,8 @@
+User-agent: Yandex
+Allow: /
+
+User-agent: Google
+Allow: /
+
+Sitemap: http://localhost:5173/sitemap.xml
+Host: http://localhost:5173/

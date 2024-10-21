@@ -1,0 +1,230 @@
+@import "../../style/vars.scss";
+
+.contactsPage {
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        max-width: 1300px;
+        padding: 53px 50px 133px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 42px;
+        font-size: 30px;
+    }
+
+    &__top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 77.5%; 
+        margin-bottom: 96px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    &__map {
+        height: 600px;
+        width: 100%;
+        margin-bottom: 128px;
+        border: 3px solid $colorTheme2;
+        border-radius: 8px;
+    }
+}
+
+.connection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 455px;
+    gap: 20px;
+
+    &__item {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__type {
+        margin-right: 16px;
+    }
+
+    &__phone,
+    &__email {
+        font-family: 'Nunito';
+        font-size: 16px;
+        font-weight: 500;
+        color: $colorTheme2;
+
+        &:hover {
+            color: $colorTheme3;
+        }
+
+        &:active {
+            color: #d9610b;
+        }
+    }
+}
+
+.schedule {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 288px;
+    padding: 0 14px;
+    align-items: center;
+
+    &__time {     
+        margin-bottom: 10px;   
+        font-family: 'Exo 2';
+        font-size: 36px;
+        font-weight: 700;
+        color: $colorTheme2;
+    }
+}
+
+.employee {
+
+    &__title {
+        margin-bottom: 40px;
+        font-size: 30px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        gap: 26px;
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .contactsPage {
+        &__container {
+            padding: 110px 30px 148px;
+        }
+
+        &__top {          
+            width: 87.5%; 
+            margin-bottom: 60px;
+        }
+
+        &__title {
+            margin-bottom: 70px;
+        }
+
+        &__map {
+            margin-bottom: 120px;
+        }
+    }
+
+    .connection {
+        gap: 21px;
+
+        &__type {
+            margin-right: 21px;
+        }
+    }
+
+    .schedule {
+        padding: 0;
+        min-width: 260px;
+    }
+
+    .employee {
+
+        &__title {
+            margin-bottom: 60px;
+        }
+    
+        &__list {
+            gap: 20px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .contactsPage {
+        &__container {
+            padding: 27px 32px 13px;
+        }   
+        
+        &__title {
+            font-size: 22px;
+            margin-bottom: 33px;
+        }
+
+        &__top {
+            flex-direction: column;
+            gap: 39px;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        &__map {
+            height: 240px;
+            margin-bottom: 30px;
+        }
+    }
+
+    .connection {
+        &__type {
+            margin-right: 23px;
+            align-self: center;
+        }
+
+
+        &__type,
+        &__value,
+        &__phone,
+        &__email {
+            font-size: 14px;
+        }
+    }
+
+    .schedule {
+        &__time {
+            margin-bottom: 15px;
+            font-size: 30px;
+        }
+    }
+
+    .employee {
+        &__title {
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.swiper {
+    &-pagination {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        margin-left: 2px;
+        margin-right: 2px;
+        background-color: $colorTheme;
+        opacity: 1;
+
+        &-active {
+            width: 15px;
+            height: 15px;
+            align-self: center;
+            background-color: $colorTheme3;
+        }
+    }
+ 
+    .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 2px;
+    }
+}

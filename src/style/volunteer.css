@@ -1,0 +1,243 @@
+.volunteer__container {
+    max-width: 996px;
+    margin: 0 auto;
+}
+
+.volunteer__content {
+    width: 100%;
+    h2 {
+        font-family: "Exo 2";
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 40px;
+        text-transform: uppercase;
+        .volunteer__br {
+            display: none;
+        }
+    }
+    form {
+        width: 100%;
+        background-color: rgba(249, 250, 251, 1);
+        border-radius: 10px;
+        margin: 30px 0 128px;
+
+        .volunteer__name,
+        .volunteer__contacts {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding-top: 33px;
+
+            label {
+                display: flex;
+                flex-direction: column;
+                font-family: "Nunito";
+                font-size: 16px;
+                font-weight: 500;
+
+                .required::after,
+                .volunteer__contacts span::after {
+                    color: red;
+                    content: "*";
+                    margin-left: 3px;
+                }
+
+                input {
+                    width: 290px;
+                    height: 46px;
+                    border-radius: 5px;
+                    padding: 15px;
+                    font-family: "Nunito";
+                    font-size: 18px;
+                    font-weight: 500;
+                    margin-top: 6px;
+                    border: 1px solid rgba(113, 113, 122, 1);
+                    cursor: pointer;
+                }
+            }
+        }
+        .volunteer__contacts label input {
+            width: 453px;
+        }
+        .volunteer__job {
+            margin: 31px 0 0 31px;
+            display: grid;
+            align-items: center;
+
+            p::after {
+                color: red;
+                content: "*";
+                margin-left: 3px;
+            }
+        }
+        .volunteer__submit {
+            margin: 25px 57px 0;
+            padding-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+
+            p {
+                font-family: "Nunito";
+                font-size: 16px;
+                font-weight: 500;
+
+                span {
+                    text-decoration: underline;
+                    margin-left: 5px;
+                }
+                span:hover {
+                    cursor: pointer;
+                    color: rgba(249, 51, 38, 1);
+                }
+            }
+            button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 113px;
+                height: 38px;
+                border-radius: 8px;
+                font-family: "Exo 2";
+                font-size: 18px;
+                font-weight: 600;
+                background-color: rgba(255, 130, 39, 1);
+                color: rgba(255, 255, 255, 1);
+                cursor: pointer;
+                border: none;
+            }
+            button:hover {
+                background-color: rgba(249, 51, 38, 1);
+            }
+        }
+        .volunteer__select {
+            max-width: 614px;
+        }
+    }
+}
+.input-error {
+    border-color: rgba(249, 51, 38, 1) !important;
+}
+.error {
+    color: rgba(249, 51, 38, 1);
+    font-family: "Nunito";
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+@media (max-width: 1000px) {
+    .volunteer__container {
+        padding: 2px;
+    }
+    .volunteer__content {
+        width: 996px;
+    }
+    .volunteer__job {
+        margin: 31px !important;
+    }
+    .volunteer__select {
+        max-width: 614px;
+    }
+}
+@media (max-width: 576px) {
+    .volunteer__content {
+        width: 100%;
+        margin: 0 auto;
+        h2 {
+            line-height: 35px;
+        }
+    }
+    form {
+        width: 100%;
+        margin: 0 auto;
+        .volunteer__name,
+        .volunteer__contacts {
+            flex-direction: column;
+            width: 300px;
+            margin: 0 auto;
+            padding-top: 0;
+        }
+        .volunteer__contacts {
+            width: 300px;
+            margin: 0 auto;
+        }
+        label input {
+            max-width: 290px;
+        }
+        .volunteer__job {
+            width: 300px;
+            margin: 31px auto !important;
+        }
+        .volunteer__submit {
+            width: 300px;
+            margin: 25px auto !important;
+            flex-direction: column;
+            button {
+                width: 210px !important;
+                height: 48px !important;
+                margin: 25px auto;
+            }
+        }
+        .volunteer__select {
+            max-width: 290px !important;
+        }
+    }
+    .css-1wu37dh-control {
+        max-width: 290px;
+    }
+}
+@media (max-width: 360px) {
+    .volunteer__content h2 {
+        font-size: 24px !important;
+        width: 180px;
+        margin: 25px auto;
+        line-height: 30px;
+        text-transform: none;
+        .volunteer__br {
+            display: block;
+        }
+    }
+    form {
+        width: 100%;
+        margin: 48px auto !important;
+        .volunteer__name,
+        .volunteer__contacts {
+            flex-direction: column;
+            width: 256px;
+            margin: 0 auto;
+            padding-top: 0;
+            gap: 17px !important;
+        }
+        .volunteer__contacts {
+            padding-top: 17px !important;
+            width: 256px;
+            margin: 0 auto;
+        }
+        label input {
+            max-width: 256px;
+        }
+        .volunteer__job {
+            width: 256px;
+            margin: 31px auto !important;
+        }
+        .volunteer__submit {
+            width: 256px;
+            margin: 25px auto !important;
+            flex-direction: column;
+            p {
+                font-size: 14px !important;
+            }
+            button {
+                width: 210px !important;
+                height: 48px !important;
+                margin: 25px auto;
+            }
+        }
+        .volunteer__select {
+            max-width: 256px !important;
+        }
+    }
+    .css-1wu37dh-control {
+        max-width: 256px;
+    }
+}

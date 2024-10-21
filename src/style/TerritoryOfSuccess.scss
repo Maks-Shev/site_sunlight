@@ -1,0 +1,33 @@
+@import './vars.scss';
+
+.territoryOfSuccess {
+	&__title {
+		text-align: center;
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+	&__description {
+		display: flex;
+		gap: 25px;
+		margin-bottom: 120px;
+	}
+
+	&__description-text {
+		max-width: 588px;
+		height: 340px;
+	}
+
+	&__description-imgBox {
+		display: block;
+		max-width: 587px;
+		width: 100%;
+	}
+
+	&__description-img {
+		width: 100%;
+		height: 100%;
+		background-color: $backgroundTheme;
+		background-image: url('/img/about/aboutPageTop.webp');
+	}
+}

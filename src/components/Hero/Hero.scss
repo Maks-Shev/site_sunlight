@@ -1,0 +1,250 @@
+@import "../../style/vars.scss";
+
+.hero {
+    min-width: 320px;
+
+    &__container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        max-width: 1200px;
+        min-height: 487px;
+        padding: 0 77px 42px;
+        margin-right: auto;
+        margin-left: auto;
+        color: #fff;
+        background-image: url(/img/home/heroImg-desktop.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &::after {
+            content: "12+";
+            position: absolute;
+            right: 33px;
+            bottom: 27px;
+            width: 34px;
+            height: 34px;
+            border: 1px solid #f9fafb;
+            border-radius: 50%;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 36px;
+            text-align: center;
+        }
+    }
+
+    &__title {
+        max-width: 500px;
+        margin-bottom: 13px;
+        font-family: "Exo 2";
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 50px;
+        text-transform: uppercase;
+    }
+
+    &__accent {
+        color: $colorTheme;
+        text-transform: uppercase;
+        font-size: 36px;
+    }
+
+    &__link {
+        display: block;
+        position: relative;
+        width: fit-content;
+        padding-right: 32px;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 36px;
+        background-image: url(/img/home/star.svg);
+        background-repeat: no-repeat;
+        background-position: right;
+        z-index: 2;
+
+        &:hover {
+            color: $colorTheme3;
+        }
+
+        &:active {
+            color: #d9610b;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            display: block;
+            top: 16px;
+            left: 0;
+            bottom: 1px;
+            right: 14px;
+            border-bottom: 1px solid $colorTheme;
+            border-right: 1px solid $colorTheme;
+        }
+    }
+
+    &__donation {
+        max-width: 1200px;
+        min-width: 320px;
+        padding: 33px 77px 0;
+        margin-right: auto;
+        margin-left: auto;
+        min-height: 194px;
+    }
+    &__header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+    .custom-header {
+        &__nav_link,
+        &__nav_button_text {
+            color: #fff;
+        }
+        &__icon_down {
+            color: #fff;
+        }
+    }
+}
+
+.donation {
+    color: var(--black);
+
+    &__description {
+        margin-bottom: 23px;
+        font-family: "Exo 2";
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 36px;
+    }
+
+    &__buttons {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 24px;
+        justify-content: space-between;
+        max-width: 1019px;
+        margin-bottom: 24px;
+    }
+
+    &__cbp {
+        display: inline-block;
+        padding-right: 67px;
+        height: 28px;
+        font-family: "Nunito";
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 28px;
+        background-image: url(/img/home/SBP-logo.svg);
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+}
+
+@media (max-width: 1000px) {
+    .hero {
+        &__container {
+            min-height: 493px;
+            padding: 0 30px 42px;
+            background-image: url(/img/home/heroImg-tablet.webp);
+
+            &::after {
+                right: 30px;
+            }
+        }
+
+        &__donation {
+            padding: 22px 30px 20px;
+            min-height: 240px;
+            background-color: #f8f8f8;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+    }
+
+    .donation {
+        &__description {
+            max-width: 884px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .donation {
+        display: flex;
+        flex-direction: column;
+
+        &__buttons {
+            flex-wrap: wrap;
+            row-gap: 24px;
+        }
+
+        &__description {
+            margin-bottom: 24px;
+            font-family: "Nunito";
+            font-size: 16px;
+            line-height: 22px;
+        }
+
+        &__cbp {
+            padding-right: 67px;
+            height: 28px;
+            align-self: center;
+            font-family: "Nunito";
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .hero {
+        &__container {
+            min-height: 209px;
+            padding: 0 32px 13px;
+            background-image: url(/img/home/heroImg-mobile.webp);
+
+            &::after {
+                display: none;
+            }
+        }
+
+        &__title {
+            max-width: 250px;
+            margin-bottom: 0;
+            font-size: 18px;
+            line-height: 20px;
+        }
+
+        &__link {
+            padding-right: 32px;
+            color: $colorTheme;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 30px;
+        }
+
+        &__donation {
+            padding: 32px 30px 20px;
+            min-height: 240px;
+            background-color: #f8f8f8;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+    }
+
+    .donation {
+        &__description {
+            max-width: 884px;
+        }
+
+        &__buttons {
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1022px;
+            margin-bottom: 24px;
+        }
+    }
+}

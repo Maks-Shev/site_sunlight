@@ -1,0 +1,59 @@
+.serviceUnavailable__block__img {
+    max-width: 842px;
+    margin: 0 auto;
+    img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+}
+.serviceUnavailable__block__title {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    align-items: center;
+    margin-top: 34px;
+    h2 {
+        font-family: "Exo 2";
+        font-weight: 700;
+        font-size: 30px;
+        color: rgba(0, 0, 0, 1);
+        text-transform: uppercase;
+    }
+    p {
+        font-family: "Exo 2";
+        font-size: 24px;
+        font-weight: 700;
+        color: rgba(0, 0, 0, 1);
+    }
+}
+@media (max-width: 1000px) {
+    .serviceUnavailable__block__img {
+        max-width: 750px;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 576px) {
+    .serviceUnavailable__block__title {
+        h2 {
+            font-size: 24px;
+        }
+        p {
+            font-size: 18px;
+        }
+    }
+}
+@media (max-width: 360px) {
+    .serviceUnavailable__block__img {
+        margin-top: 100px
+    }
+    .serviceUnavailable__block__title {
+        flex-direction: column-reverse;
+        h2 {
+            font-size: 16px;
+        }
+        p {
+            font-size: 14px;
+        }
+    }
+}

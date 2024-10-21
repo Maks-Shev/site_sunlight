@@ -1,0 +1,124 @@
+@import '../../../style/vars.scss';
+
+.card {
+	max-width: 331px;
+	min-width: 200px;
+	width: 100%;
+	min-height: 444px;
+	height: auto;
+	border-radius: 10px;
+	background-color: #f9fafb;
+	font-family: 'Nunito';
+	margin-bottom: 60px;
+
+	&__picture {
+		display: block;
+		height: 222px;
+	}
+
+	&__image {
+		width: 100%;
+		height: 100%;
+        object-fit: cover;
+        object-position: center;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		height: 50%;
+		height: 217px;
+		padding: 14px 26px 27px 23px;
+	}
+
+	&__title {
+		margin-bottom: 10px;
+		font-size: 16px;
+		font-weight: 700;
+		display: -webkit-box;
+		-webkit-line-clamp: 1;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	&__description {
+		display: -webkit-box;
+		-webkit-line-clamp: 6;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		font-size: 14px;
+		font-weight: 500;
+	}
+
+	&__footer {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin-bottom: 0;
+		margin-top: auto;
+	}
+
+	&__date {
+		align-self: flex-end;
+		font-size: 10px;
+		font-weight: 500;
+	}
+
+	&__link {
+		font-size: 16px;
+		font-weight: 500;
+		color: $colorTheme2;
+		border-bottom: 1px solid $colorTheme;
+
+		&:hover {
+			color: $colorTheme3;
+		}
+	}
+}
+
+@media (max-width: 1000px) {
+	.card {
+		&__content {
+			padding: 15px 9px 26px;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.card {
+		max-width: 575px !important;
+
+		&__image {
+			object-fit: fill;
+		}
+	}
+}
+
+@media (max-width: 576px) {
+	.card {
+		margin-bottom: 24px;
+		&__content {
+			padding: 7px 10px 19px;
+		}
+
+		&__title {
+			font-size: 14px;
+		}
+
+		&__link {
+			font-size: 14px;
+		}
+	}
+}
+
+@media (max-width: 375px) {
+	.card {
+		&__image {
+			object-fit: cover;
+		}
+	}
+}

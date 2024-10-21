@@ -1,0 +1,228 @@
+.title__container {
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.title__container__textTitle {
+  font-family: "Exo 2";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.reports__container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #f9fafb;
+  margin-bottom: 152px;
+  border-radius: 10px;
+}
+.reports__container .tabsContainer {
+  display: flex;
+  gap: 88px;
+  justify-content: flex-start;
+  padding-bottom: 37px;
+  padding-top: 42px;
+  padding-left: 45px;
+  white-space: nowrap;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  -ms-overflow-style: none;
+  scrollbar-color: #71717A;
+}
+.reports__container .tabsContainer::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+.reports__container .tabsContainer::-webkit-scrollbar-track {
+  background: transparent;
+}
+.reports__container .tabsContainer::-webkit-scrollbar-thumb {
+  background-color: #71717A;
+  border-radius: 10px;
+  border: 2px solid transparent;
+}
+.reports__container .tabsContainer::-webkit-scrollbar-thumb:hover {
+  background-color: #f93326;
+}
+.reports__container .tab {
+  background-color: #f9fafb;
+  color: #71717A;
+  font-family: "Exo 2";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.6px;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
+  outline: none;
+}
+.reports__container .tab:hover {
+  color: #f93326;
+}
+.reports__container .activeTab {
+  background-color: #f9fafb;
+  color: #ff8227;
+  font-family: "Exo 2";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.6px;
+  text-align: left;
+  border: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.reports__container .activeTab:hover {
+  color: #f93326;
+}
+.reports__container__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.reports__container__table tbody tr {
+  border-bottom: 1px solid #D9D9D9;
+}
+.reports__container__table tbody tr:last-child {
+  border-bottom: none;
+}
+.reports__container__table td {
+  vertical-align: middle;
+  padding-left: 45px;
+  padding-bottom: 18px;
+  padding-top: 13px;
+}
+.reports__container__table td:first-child {
+  width: 300px;
+  font-family: "Nunito";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21.82px;
+  text-align: left;
+}
+.reports__container__table td:nth-child(2) {
+  font-family: "Nunito";
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16.37px;
+  text-align: left;
+}
+.reports__container__table td:last-child {
+  text-align: right;
+}
+.reports__container__table__downloadButton {
+  margin-right: 68.64px;
+  font-family: "Exo 2";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+  padding: 10px;
+  color: #ff8227;
+  background-color: #f9fafb;
+  border: 2px solid #ff8227;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.reports__container__table__downloadButton:hover {
+  border: 2px solid #f93326;
+  color: #f93326;
+}
+
+@media (max-width: 1000px) {
+  .title__container {
+    margin-top: 49px;
+    margin-bottom: 49px;
+  }
+  .reports__container {
+    max-width: 940px;
+    width: 100%;
+    margin-bottom: 142px;
+  }
+  .reports__container .tabsContainer {
+    padding-bottom: 26px;
+    gap: 40px;
+    padding-left: 40px;
+  }
+  .reports__container__table td {
+    padding-left: 40px;
+    padding-bottom: 12px;
+    padding-top: 15px;
+  }
+  .reports__container__table__downloadButton {
+    margin-right: 44px;
+  }
+}
+@media (max-width: 767px) {
+  .title__container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .title__container__textTitle {
+    font-size: 24px;
+  }
+  .reports__container {
+    max-width: 700px;
+    margin-bottom: 88px;
+  }
+  .reports__container .tabsContainer {
+    gap: 25px;
+    padding-top: 26px;
+    padding-bottom: 20px;
+    padding-left: 16px;
+  }
+  .reports__container__table {
+    margin-top: 25px;
+  }
+  .reports__container__table td {
+    padding-left: 16px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+  }
+  .reports__container__table__downloadButton {
+    margin-right: 44px;
+  }
+}
+@media (max-width: 576px) {
+  .reports__container {
+    max-width: 500px;
+  }
+  .reports__container__table td {
+    display: block;
+    position: relative;
+    text-align: left;
+    padding-left: 16px;
+    padding-bottom: 0px;
+  }
+  .reports__container__table td:first-child {
+    width: 200px;
+  }
+  .reports__container__table tr {
+    padding-left: 16px;
+    border-bottom: 1px solid #D9D9D9;
+  }
+  .reports__container__table__downloadButton {
+    position: absolute;
+    right: 0px;
+    bottom: 20px;
+    margin-right: 16px;
+  }
+}
+@media (max-width: 375px) {
+  .reports__container {
+    max-width: 360px;
+    padding: 0 10px;
+  }
+}
+@media (max-width: 320px) {
+  .reports__container {
+    max-width: 256px;
+    padding: 0;
+  }
+  .reports__container__table td:first-child {
+    width: 140px;
+  }
+}/*# sourceMappingURL=Reports.module.css.map */

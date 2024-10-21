@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400..700&family=Nunito:wght@400..700&display=swap');
+@import './vars.scss';
+@import './mixins.scss';
+
+:root {
+    --colorTheme: #ffd43c;
+    --colorTheme2: #ff8227;
+    --colorTheme3: #f93326;
+    --colorTheme4: #232323;
+    --colorTheme5: #71717A;
+    --colorWhite: #fff;
+    --backgroundTheme: #f8f8f8;
+    --backgroundTheme2: #f9fafb;
+
+    --sizeWidthDefault: 1048px;
+    --sizeWidthDefaultBig: 1200px;
+
+    --sizeWidthPadMax: 940px;
+    --sizeWidthPadMid: 750px;
+
+    --sizeWidthPhoneMax: 500px;
+    --sizeWidthPhoneMid: 360px;
+    --sizeWidthPhoneSmall: 256px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	transition: all 0.2s ease-in-out;
+}
+
+*:focus {
+	outline: none;
+}
+
+body {
+	scroll-behavior: smooth;
+	font-family: 'Exo 2';
+	font-weight: 700;
+	font-size: 18px;
+	color: #000;
+}
+
+.noScroll {
+    overflow: hidden;
+}
+
+li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+button {
+	border: none;
+	cursor: pointer;
+}
+
+p {
+	font-family: 'Nunito';
+	font-weight: 500;
+	font-size: 16px;
+	color: #000;
+}
+
+.container {
+	@include centerSize($sizeWidthDefault);
+
+	@media (max-width: 1000px) {
+		@include centerSize($sizeWidthPadMax);
+	}
+
+	@media (max-width: 767px) {
+		@include centerSize($sizeWidthPadMid);
+	}
+
+	@media (max-width: 576px) {
+		@include centerSize($sizeWidthPhoneMax);
+	}
+
+	@media (max-width: 375px) {
+		@include centerSize($sizeWidthPhoneMid);
+	}
+
+	@media (max-width: 320px) {
+		@include centerSize($sizeWidthPhoneSmall);
+	}
+}
+
+.container1200 {
+	@include centerSize($sizeWidthDefaultBig);
+
+	@media (max-width: 1000px) {
+		@include centerSize($sizeWidthPadMax);
+	}
+
+	@media (max-width: 767px) {
+		@include centerSize($sizeWidthPadMid);
+	}
+
+	@media (max-width: 576px) {
+		@include centerSize($sizeWidthPhoneMax);
+	}
+
+	@media (max-width: 375px) {
+		@include centerSize($sizeWidthPhoneMid);
+	}
+
+	@media (max-width: 320px) {
+		@include centerSize($sizeWidthPhoneSmall);
+	}
+}

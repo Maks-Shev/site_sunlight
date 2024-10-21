@@ -1,0 +1,45 @@
+@import '../../../style/vars.scss';
+@import '../../../style/mixins.scss';
+
+.titleBox {
+	display: flex;
+	align-items: center;
+
+	.title {
+		margin-right: 44px;
+		font-family: 'Exo 2';
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 120%;
+		text-transform: uppercase;
+		color: #232323;
+	}
+}
+
+@media (max-width: 767px) {
+	.title {
+		font-size: 22px !important;
+		line-height: 26.4px;
+	}
+}
+
+@media (max-width: 576px) {
+	.title {
+		font-size: 22px !important;
+		line-height: 26.4px;
+	}
+}
+
+@media (max-width: 375px) {
+	.title {
+		font-size: 22px !important;
+		line-height: 26.4px;
+	}
+}
+
+@media (max-width: 320px) {
+	.title {
+		font-size: 22px !important;
+		line-height: 26.4px;
+	}
+}

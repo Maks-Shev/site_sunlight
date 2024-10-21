@@ -1,0 +1,128 @@
+.help__sub {
+  max-width: 1200px;
+  width: calc(100% - 60px);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 128px;
+  padding: 63px 133px;
+  border: 3px solid #ff8227;
+  border-radius: 10px;
+  background-color: #f9fafb;
+}
+.help__payment {
+  max-width: 510px;
+}
+.help__volunteer {
+  max-width: 372px;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.payment__list {
+  display: flex;
+  flex-direction: column;
+}
+.payment__title {
+  margin-bottom: 12px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #f93326;
+}
+.payment__item {
+  display: flex;
+  flex-direction: row;
+  font-family: "Nunito";
+  font-size: 18px;
+  line-height: 22px;
+}
+.payment__type {
+  margin-right: 5px;
+  font-weight: 700;
+  line-height: 22px;
+}
+.payment__value {
+  font-weight: 500;
+}
+
+.volunteer {
+  font-family: "Exo 2";
+}
+.volunteer__title {
+  margin-bottom: 26px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+}
+.volunteer__btn {
+  padding: 16px 58px;
+  background-color: #ff8227;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+}
+.volunteer__btn:hover {
+  background-color: #f93326;
+}
+.volunteer__btn:active {
+  background-color: #d9610b;
+}
+
+@media (max-width: 1000px) {
+  .help__sub {
+    width: calc(100% - 60px);
+    padding: 62px 76px;
+    margin-bottom: 149px;
+  }
+  .help__payment {
+    max-width: 360px;
+  }
+}
+@media (max-width: 767px) {
+  .help__sub {
+    width: calc(100% - 64px);
+    padding: 0;
+    margin-bottom: 96px;
+    flex-direction: column;
+    border: none;
+    background-color: inherit;
+  }
+  .help__payment {
+    width: 100%;
+    max-width: none;
+    margin-bottom: 32px;
+    padding: 23px 21px;
+    border: 3px solid #ff8227;
+    border-radius: 10px;
+    background-color: #f9fafb;
+  }
+  .help__volunteer {
+    align-self: center;
+  }
+}
+@media (max-width: 576px) {
+  .payment__title {
+    margin-bottom: 26px;
+  }
+  .payment__value, .payment__type {
+    font-size: 14px;
+    line-height: 19.6px;
+  }
+  .volunteer {
+    max-width: 320px;
+  }
+  .volunteer__title {
+    margin-bottom: 23px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .volunteer__btn {
+    width: 100%;
+    padding: 15px 44px;
+  }
+}/*# sourceMappingURL=HelpPayment.css.map */

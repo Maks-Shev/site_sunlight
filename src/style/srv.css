@@ -1,0 +1,124 @@
+.srv__title {
+	font-family: 'Exo 2';
+	font-weight: 700;
+	margin-top: 44px;
+	margin-bottom: 44px;
+	text-align: center;
+}
+
+.srv__title h2 {
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+
+.srv__desc__up {
+	width: 100%;
+}
+
+.srv__title__block {
+	display: flex;
+	gap: 25px;
+	margin-bottom: 60px;
+}
+
+.srv__desc__up__text {
+	max-width: 588px;
+	width: 100%;
+	font-family: 'Nunito';
+	font-size: 1rem;
+	font-weight: 700;
+}
+
+.srv__desc__up__text p {
+	white-space: pre-wrap;
+}
+
+.srv__desc__up__img {
+	max-width: 588px;
+	width: 100%;
+}
+
+.srv__desc__up__img img {
+	object-fit: cover;
+	width: 100%;
+	border-radius: 10px;
+}
+
+.srv__desc__down {
+	max-width: 1200px;
+	padding-bottom: 48px;
+	font-family: 'Nunito';
+	font-size: 1rem;
+	font-weight: 700;
+}
+
+.srv__help__block {
+	max-width: 1200px;
+	margin: 8.2vw auto;
+}
+
+/* Медиазапросы для экранов с шириной 1000px и менее */
+@media (max-width: 1000px) {
+	.srv__title {
+		margin-top: 60px;
+		margin-bottom: 60px;
+	}
+
+	.srv__title__block {
+		flex-direction: column;
+	}
+
+	.srv__desc__up__text,
+	.srv__desc__up__img {
+		max-width: 100%;
+	}
+	.srv__desc__down {
+		padding-bottom: 46px;
+	}
+	.srv__desc__up__img {
+		margin-top: 36px;
+		height: 500px;
+		overflow: hidden;
+		display: flex;
+	}
+
+	.srv__desc__up__img img {
+		height: 100%;
+	}
+	.srv__help__block {
+		max-width: 95vw;
+	}
+}
+
+@media (max-width: 576px) {
+	.srv__title {
+		margin-top: 24px;
+		margin-bottom: 24px;
+	}
+}
+
+@media (max-width: 375px) {
+	.srv__title {
+		h2 {
+			font-size: 24px;
+		}
+	}
+
+	.srv__title__block {
+		flex-direction: column;
+		gap: 24px;
+		margin-bottom: 24px;
+	}
+
+	.srv__desc__up__img {
+		margin-top: 0;
+		height: 300px;
+	}
+
+	.srv__desc__down {
+		padding-bottom: 30px;
+		p {
+			font-size: 14px;
+		}
+	}
+}

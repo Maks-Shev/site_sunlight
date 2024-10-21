@@ -1,0 +1,49 @@
+/* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    font-family: "Exo2";
+    font-weight: 600;
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1200px;
+    min-width: 320px;
+    padding-left: 77px;
+    padding-right: 77px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+.no-scroll {
+    overflow: hidden;
+}  */

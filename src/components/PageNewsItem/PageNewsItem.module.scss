@@ -1,0 +1,230 @@
+@import '../../style/vars.scss';
+
+.newsItem {
+    display: flex;
+    width: 100%;
+    padding-top: 30px;
+    gap: 75px;
+
+    &__banner {
+        margin-top: 128px;
+    }
+
+    &__hero {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 66%;
+        border-radius: 10px;
+        background-color: #f9fafb;
+        padding: 12px 70px 42px 102px;
+    }
+
+    &__date {
+        display: block;
+        margin-bottom: 40px;
+        font-family: 'Nunito';
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    &__title {
+        margin-bottom: 40px;
+        font-size: 30px;
+    }
+
+    p {
+        margin-bottom: 32px;
+        white-space: pre-wrap;
+    }
+
+    &__slider {
+        width: 79%;
+        align-self: center;
+        margin-left: 31px;
+        margin-bottom: 0;
+        margin-top: auto;
+        position: relative;   
+    }
+
+    &__picture {
+        display: block;
+        width: 94%;
+    }
+
+    &__img {
+        width: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+}
+
+.customArrowBox {
+    bottom: 15%;
+	left: 47%;
+    width: 600px;
+}
+
+.others {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 75px;
+
+    &__title {
+        padding-right: 52px;
+        margin-bottom: 43px;
+        font-size: 24px;
+    }
+    
+    &__container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1000px) {
+    .newsItem {
+        flex-direction: column;
+        gap: 0;
+
+        &__banner {
+            margin-top: 68px;
+        }
+
+        &__date,
+        &__title {
+            margin-bottom: 30px;
+        }
+
+        &__descripion {
+            margin-bottom: 60px;
+        }
+
+        &__hero {
+            width: 100%;
+            padding-left: 80px;
+            padding-right: 80px;
+        }
+
+        &__slider {
+            width: 69%;
+            margin-left: 0;
+        }
+
+        &__picture {
+            width: 100%;
+        }
+
+        &__img {
+            max-height: 296px;
+        }
+    }
+
+    .others {
+        width: 100%;
+
+        &__title {
+            align-self: flex-start;
+            margin-bottom: 28px;
+        }
+
+        &__container {
+            flex-direction: row;
+            gap: 20px;
+        }
+    }
+
+    .customArrowBox {
+        width: 730px;
+        left: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .newsItem {
+        &__banner {
+            margin-top: 0px;
+        }
+    }
+    .customArrowBox {
+        display: none;
+    }
+}        
+
+@media (max-width: 576px) {
+    .newsItem {
+        margin-bottom: 88px;
+        padding-left: 32px;
+        padding-right: 32px;
+
+        &__hero {
+            padding: 13.5px 0 20px;
+        }
+
+        &__date {
+            margin-bottom: 9px;
+        }
+
+        &__title {
+            margin-bottom: 32px;
+            font-size: 24px;
+        }
+
+        &__descripion {
+            margin-bottom: 34px;
+            font-size: 14px;            
+        }
+
+        &__slider {
+            width: 100%;
+        }
+
+        &__img {
+            height: 205px;
+        }
+    }
+
+    .others {
+        padding-top: 60px;
+        margin-bottom: 88px;
+
+        &__container {
+            flex-direction: column;
+            gap: 30px;
+            height: 1302px;
+            width: 400px;
+
+            & .card {
+                max-height: 414px;
+
+                & .card__image,
+                & .card__picture {
+                    height: 207px;
+                }
+
+                & .card__content {
+                    padding: 15px 28px 43px 16px;
+
+                    & .card__description {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+
+        &__title {
+            margin-bottom: 60px;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .others {
+        &__container {
+            width: 256px;
+        }
+    }
+}

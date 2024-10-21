@@ -1,0 +1,108 @@
+.projectsAll__item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.projectsAll__item__link {
+  margin-bottom: 16px;
+  cursor: pointer;
+  max-width: 588px;
+}
+.projectsAll__item__desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.projectsAll__item__desc__title {
+  font-family: "Exo 2";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.6px;
+  text-align: left;
+  margin-bottom: 8px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 3.6em;
+}
+.projectsAll__item__desc__text {
+  font-family: "Nunito";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.82px;
+  text-align: justify;
+  margin-bottom: 16px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.projectsAll__item__desc__text .denotation {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 3.6em;
+}
+.projectsAll__item__linkImg {
+  width: 100%;
+  height: 312px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+.projectsAll__item__linkImg.closed {
+  filter: grayscale(100%);
+}
+.projectsAll__item .closed__label {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: #FF4E36;
+  color: white;
+  padding: 22px 16px 22px 16px;
+  border-radius: 0px 0px 10px 10px;
+  font-family: "Nunito";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21.82px;
+}
+
+@media (max-width: 1000px) {
+  .projectsAll__item__linkImg {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    border-radius: 10px;
+  }
+  .projectsAll__item__link {
+    max-width: 300px;
+  }
+  .projectsAll__item__desc__title {
+    font-size: 16px;
+  }
+  .projectsAll__item__desc__text {
+    font-size: 14px;
+  }
+}
+@media (max-width: 767px) {
+  .projectsAll__item__linkImg {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+  .projectsAll__item__link {
+    max-width: 100%;
+  }
+  .projectsAll__item__desc__title {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=ProjectsItemForPage.module.css.map */

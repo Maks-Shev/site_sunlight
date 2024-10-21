@@ -1,0 +1,124 @@
+@import '../../style/vars.scss';
+@import '../../style/mixins.scss';
+
+.specialists__items__specBox__infoSpec {
+    max-width: 250px;
+
+    &__nameSpec {
+        margin-top: 16px;
+        font-family: 'Nunito';
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 21.82px;
+    }
+
+    &__text {
+        margin-top: 8px;
+        height: 46px;
+        font-family: 'Nunito';
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 21.82px;
+    }
+
+    &__link {
+        font-family: 'Nunito';
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 21.82px;
+        background-color: $colorWhite;
+        color: $colorTheme2;
+        border-bottom: 1px solid $colorTheme;
+
+        &:hover {
+            color: $colorTheme3;
+        }
+    }
+
+    &__img {
+        width: 250px;
+        max-height: 260px;
+    }
+
+    &__img:hover {
+        filter: brightness(90%);
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .specialists__items__specBox__infoSpec {
+        height: 470px;
+        &__img {
+            width: 100%;
+            height: 332px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        &__nameSpec {
+            margin-top: 25px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .specialists__items__specBox__infoSpec {
+        max-height: 400px;
+        &__img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .specialists__items__specBox__infoSpec {
+        height: 400px;
+        margin-bottom: 18px;
+        position: relative;
+        &__nameSpec {
+            margin-top: 10px;
+            font-size: 14px;
+            padding-left: 10px;
+        }
+        &__text {
+            font-size: 14px;
+            padding-left: 10px;
+        }
+        &__link {
+            font-size: 14px;
+            margin-left: 10px;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .specialists__items__specBox__infoSpec {
+        max-height: 280px;
+        margin-bottom: 18px;
+        position: relative;
+        &__img {
+            width: 256px;
+            height: 230px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        &__text {
+            width: 256px;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .specialists__items__specBox__infoSpec {
+        max-height: 300px;
+        &__img {
+            width: $sizeWidthPhoneSmall;
+        }
+        &__link {
+            display: none;
+        }
+    }
+}

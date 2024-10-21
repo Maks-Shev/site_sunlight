@@ -1,0 +1,134 @@
+.about {
+  width: 100%;
+  margin-top: 128px;
+  display: flex;
+  justify-content: space-between;
+}
+.about__descBox {
+  margin-right: 25px;
+  max-width: 408px;
+  max-height: 178px;
+}
+.about__descBox__title {
+  display: flex;
+  align-items: flex-start;
+}
+.about__descBox__desc {
+  font-family: "Nunito";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21.82px;
+  margin-top: 32px;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: pre-wrap;
+}
+.about__statsBox {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 0 18px 0 18px;
+}
+.about__statsBox__statItem {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about__statsBox__statItem__icon1, .about__statsBox__statItem__icon2, .about__statsBox__statItem__icon3 {
+  width: 54px;
+  height: 54px;
+  margin-bottom: 15px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about__statsBox__statItem__num {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #ff8227;
+  margin-bottom: 15px;
+}
+.about__statsBox__statItem__text {
+  font-family: "Nunito";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21.82px;
+  text-align: center;
+  color: #232323;
+}
+
+@media (max-width: 1000px) {
+  .about {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px;
+  }
+  .about__descBox {
+    max-height: 222px;
+    max-width: 303px;
+  }
+  .about__descBox__desc {
+    -webkit-line-clamp: 7;
+  }
+  .about__statsBox {
+    margin-top: 63px;
+  }
+}
+@media (max-width: 767px) {
+  .about {
+    margin-top: 96px;
+    padding: 0 20px;
+  }
+  .about__descBox {
+    margin-right: 5px;
+  }
+  .about__descBox__desc {
+    font-size: 14px;
+    line-height: 19.1px;
+    margin-top: 22px;
+  }
+  .about__statsBox {
+    margin-top: 10px;
+  }
+  .about__statsBox__statItem__icon1, .about__statsBox__statItem__icon2, .about__statsBox__statItem__icon3 {
+    width: 35px;
+    height: 35px;
+  }
+  .about__statsBox__statItem__num {
+    font-size: 30px;
+  }
+  .about__statsBox__statItem__text {
+    font-size: 14px;
+  }
+}
+@media (max-width: 576px) {
+  .about {
+    display: block;
+  }
+  .about__descBox {
+    margin-bottom: 25px;
+    max-width: 100%;
+  }
+  .about__statsBox {
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 375px) {
+  .about__statsBox {
+    display: block;
+  }
+  .about__statsBox__statItem {
+    margin-bottom: 16px;
+  }
+  .about__statsBox__statItem__icon1, .about__statsBox__statItem__icon2, .about__statsBox__statItem__icon3 {
+    width: 54px;
+    height: 54px;
+  }
+}/*# sourceMappingURL=About.module.css.map */

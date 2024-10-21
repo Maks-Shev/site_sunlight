@@ -1,0 +1,115 @@
+.modal__container__confirm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(113, 113, 122, 0.4);
+    z-index: 1000;
+}
+
+.modal__content__confirm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    background-color: #fff;
+    padding: 20px;
+    border: 3px solid rgba(28, 180, 89, 1);
+    border-radius: 8px;
+    width: 792px;
+    height: 480px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow-y: auto;
+    h2 {
+        margin: 0 auto;
+        max-width: 350px;
+        text-align: center;
+        font-family: "Nunito";
+        font-size: 25px;
+        margin-bottom: 16px;
+        font-size: 24px;
+        text-align: center;
+    }
+    img {
+        width: 100%;
+    }
+    p {
+        font-family: "Nunito";
+        font-size: 16px;
+        color: rgba(35, 35, 35, 1);
+        font-weight: 500;
+        width: 185px;
+        margin-bottom: 44px;
+    }
+    .modal__block__confirm {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        .modal__image__confirm {
+            margin-right: 10px;
+        }
+        .modal__text__confirm {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 15px 10px 0 0;
+            h2 {
+                font-family: 'Exo 2';
+                font-size: 18px;
+                font-weight: 700;
+                color: rgba(35, 35, 35, 1);
+            }
+        }
+        
+    }
+    .modal__btn__confirm {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 130, 39, 1);
+        width: 89px;
+        height: 38px;
+        border: none;
+        border-radius: 8px;
+        font-family: 'Exp 2';
+        font-size: 18px;
+        font-weight: 600;
+        color: rgba(255, 255, 255, 1);
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+    
+    .modal__btn__confirm:hover {
+        background-color: rgba(249, 51, 38, 1);
+    }
+}
+@media (max-width: 500px) {
+    .modal__container__confirm {
+        left: 0;
+        margin: 0;
+        width: 100%;
+    }
+    .modal__content__confirm {
+        width: 300px;
+        h2 {
+            font-size: 15px;
+        }
+        p {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+    }
+    .modal__block__confirm {
+        flex-direction: column;
+        gap: 10px !important;
+    }
+    .modal__text__confirm, .modal__image__confirm {
+        margin: 0 !important;
+    }
+}

@@ -1,0 +1,69 @@
+@import '../../style/vars.scss';
+
+.specialists__items__specBox__infoSpec {
+    max-width: 247px;
+    max-height: 382px;
+
+    &__desc {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__nameSpec {
+        margin-top: 16px;
+        font-family: 'Nunito';
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 21.82px;
+    }
+
+    &__text {
+        margin-top: 8px;
+        height: 46px;
+        font-family: 'Nunito';
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 21.82px;
+    }
+
+    &__link {
+        font-family: 'Nunito';
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 21.82px;
+        background-color: $colorWhite;
+        color: $colorTheme2;
+        border-bottom: 1px solid $colorTheme;
+
+        &:hover {
+            color: $colorTheme3;
+        }
+    }
+
+    &__img {
+        width: 247px;
+        max-height: 260px;
+    }
+
+    &__img:hover {
+        filter: brightness(90%);
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .specialists__items__specBox__infoSpec {
+        max-width: $sizeWidthPadMid;
+        max-height: 382px;
+        margin-bottom: 24px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__desc {
+            width: 250px;
+        }
+    }
+}
